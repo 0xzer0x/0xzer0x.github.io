@@ -83,7 +83,7 @@ Follow the build instructions on the project repository.<br/>
 
 {{< /rawhtml >}}
 
-# <i><span class="fa-centered">{{< ico fas camera >}}</span></i> Screenshots
+# <span class="fa-centered">{{< ico fas camera >}}</span> Screenshots
 
 ![light.png](/imgs/quran-companion/screenshots/light.png#center)
 ![dark.png](/imgs/quran-companion/screenshots/dark.png#center)
