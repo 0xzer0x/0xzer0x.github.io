@@ -65,6 +65,9 @@ params:
     - name: youtube
       title: YouTube
       url: "https://www.youtube.com/@0xzer0x"
+    - name: email
+      title: Email
+      url: mailto:youssefessamasu@gmail.com
 
   editPost:
     URL: "https://github.com/0xzer0x/0xzer0x.github.io/tree/main/content"
