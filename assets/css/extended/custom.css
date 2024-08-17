@@ -17,12 +17,12 @@ table td {
   flex: 1;
 }
 
-.job-left-ar {
+.job-left-rtl {
   text-align: right;
   flex: 2;
 }
 
-.job-right-ar {
+.job-right-rtl {
   text-align: left;
   flex: 1;
 }

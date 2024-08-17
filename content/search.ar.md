@@ -1,5 +1,5 @@
 ---
-title: "بحث"
+title: بحث
 placeholder: ابحث الموقع ...
-layout: "search"
+layout: search
 ---

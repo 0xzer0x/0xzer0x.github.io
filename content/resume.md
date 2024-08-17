@@ -23,21 +23,13 @@ hideMeta: true
     </p>
 </div>
 <h2><span class="fa-centered">{{< ico fab black-tie >}}</span>&nbsp;Work Experience</h2>
-<div class="job">
-      <div class="job-left">
-          <b>DevOps Intern</b></br>
-          <i>Synapse Analytics</i>
-          <ul>
-              <li>Optimized Dockerfiles for staging services, reducing final image size by 37.5%</li>
-              <li>Developed Python and Bash CLI tools and scripts for internal use</li>
-              <li>Revamped Grafana dashboard to filter metrics using dashboard variables and show Prometheus alerts</li>
-          </ul>
-      </div>
-      <div class="job-right">
-          <i>Jul 2024 - Sep 2024</i></br>
-          <i>Cairo, Egypt</i>
-      </div>
-</div>
+{{< job title="DevOps Intern" company="Synapse Analytics" from="Jul 2024" to="Sep 2024" location="Cairo, Egypt" >}}
+<ul>
+  <li>Optimized Dockerfiles for staging services, reducing final image size by 37.5%</li>
+  <li>Developed Python and Bash CLI tools and scripts for internal use</li>
+  <li>Revamped Grafana dashboard to filter metrics using dashboard variables and show Prometheus alerts</li>
+</ul>
+{{< /job >}}
 <h2><span class="fa-centered">{{< ico fas toolbox >}}</span>&nbsp;Tools &amp; Technologies</h2>
 <table>
   <tr>

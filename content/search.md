@@ -1,5 +1,5 @@
 ---
-title: "Search"
+title: Search
 placeholder: Search site ...
-layout: "search"
+layout: search
 ---

@@ -23,21 +23,13 @@ hideMeta: true
     </p>
 </div>
 <h2><span class="fa-centered">{{< ico fab black-tie >}}</span>&nbsp;الخبرة العملية</h2>
-<div class="job">
-      <div class="job-left-ar">
-          <b>متدرب DevOps</b></br>
-          <i>سينابس أناليتيكس</i>
-          <ul>
-              <li>تحسين ملفات Docker للخدمات التجريبية، مما قلل حجم الصورة النهائية بنسبة 37.5%</li>
-              <li>تطوير أدوات وسكريبتات CLI باستخدام Python وBash للاستخدام الداخلي</li>
-              <li>تجديد لوحة التحكم Grafana لتصفية المقاييس باستخدام متغيرات اللوحة وعرض تنبيهات Prometheus</li>
-          </ul>
-      </div>
-      <div class="job-right-ar">
-          <i>يوليو 2024 - سبتمبر 2024</i></br>
-          <i>القاهرة، مصر</i>
-      </div>
-</div>
+{{< job dir="rtl" title="متدرب DevOps" company="سينابس أناليتيكس" from="يوليو 2024" to="سبتمبر 2024" location="القاهرة، مصر" >}}
+<ul>
+  <li>تحسين ملفات Docker للخدمات التجريبية، مما قلل حجم الصورة النهائية بنسبة 37.5%</li>
+  <li>تطوير أدوات وسكريبتات CLI باستخدام Python وBash للاستخدام الداخلي</li>
+  <li>تجديد لوحة التحكم Grafana لتصفية المقاييس باستخدام متغيرات اللوحة وعرض تنبيهات Prometheus</li>
+</ul>
+{{< /job >}}
 <h2><span class="fa-centered">{{< ico fas toolbox >}}</span>&nbsp;الأدوات والتقنيات</h2>
 <table dir="ltr">
   <tr>

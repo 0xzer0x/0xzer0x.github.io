@@ -59,15 +59,15 @@ params:
     - name: linkedin
       title: LinkedIn
       url: "https://linkedin.com/in/0xzer0x"
+    - name: email
+      title: Email
+      url: mailto:youssefessamasu@gmail.com
     - name: telegram
       title: Telegram
       url: "https://t.me/Oxzer0x"
     - name: youtube
       title: YouTube
       url: "https://www.youtube.com/@0xzer0x"
-    - name: email
-      title: Email
-      url: mailto:youssefessamasu@gmail.com
 
   editPost:
     URL: "https://github.com/0xzer0x/0xzer0x.github.io/tree/main/content"
@@ -109,15 +109,20 @@ languages:
           name: Projects
           url: projects/
           weight: 1
-        - name: Blog
+        - identifier: blog
+          name: Blog
           url: blog/
           weight: 2
-        - name: Search
-          url: search/
+        - identifier: resume
+          name: Resume
+          url: resume/
           weight: 3
         - name: Tags
           url: tags/
           weight: 4
+        - name: Search
+          url: search/
+          weight: 5
 
   ar:
     languageName: "العربية"
@@ -132,29 +137,33 @@ languages:
     menu:
       main:
         - identifier: projects
-          name: مشاريع
+          name: المشاريع
           url: projects/
           weight: 1
         - identifier: blog
-          name: مدونة
+          name: المدونة
           url: blog/
           weight: 2
-        - name: بحث
-          url: search/
+        - identifier: resume
+          name: السيرة الذاتية
+          url: resume/
           weight: 3
-        - name: وسوم
+        - name: الوسوم
           url: tags/
           weight: 4
+        - name: بحث
+          url: search/
+          weight: 5
 
     params:
       profileMode:
         title: يوسف فتحي
         subtitle: مهندس DevOps
         buttons:
-          - name: مشاريع
+          - name: المشاريع
             url: projects/
           - name: السيرة الذاتية
-            url: resume
+            url: resume/
 
       editPost:
         URL: "https://github.com/0xzer0x/0xzer0x.github.io/tree/main/content"
