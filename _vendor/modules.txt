@@ -1,0 +1,7 @@
+# github.com/hugomods/icons/vendors/simple-icons v1.0.49
+# github.com/hugomods/icons v0.6.4
+# github.com/hugomods/simple-icons v13.5.0+incompatible
+# github.com/hugomods/icons/vendors/font-awesome v0.6.8
+# github.com/hugomods/font-awesome v6.6.0+incompatible
+# github.com/hugomods/icons/vendors/mdi v0.3.6
+# github.com/Templarian/MaterialDesign-SVG v7.4.47+incompatible

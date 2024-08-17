@@ -1,0 +1,165 @@
+baseURL: "https://0xzer0x.github.io"
+languageCode: "en-us"
+title: "Youssef Fathy"
+paginate: 5
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+
+module:
+  imports:
+    - path: github.com/hugomods/icons/vendors/simple-icons
+    - path: github.com/hugomods/icons/vendors/font-awesome
+    - path: github.com/hugomods/icons/vendors/mdi
+
+minify:
+  disableXML: true
+
+params:
+  description: "Youssef Fathy - Personal website"
+  author: "Youssef Fathy"
+  mainSections:
+    - "blog"
+    - "projects"
+
+  defaultTheme: auto
+  ShowShareButtons: true
+  ShowReadingTime: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+
+  profileMode:
+    enabled: true
+    title: Youssef Fathy
+    subtitle: DevOps Engineer
+    imageUrl: "imgs/me.jpg"
+    imageTitle: me
+    buttons:
+      - name: Projects
+        url: projects/
+      - name: Resume
+        url: resume
+
+  socialIcons:
+    - name: github
+      title: GitHub
+      url: "https://github.com/0xzer0x"
+    - name: linkedin
+      title: LinkedIn
+      url: "https://linkedin.com/in/0xzer0x"
+    - name: telegram
+      title: Telegram
+      url: "https://t.me/Oxzer0x"
+    - name: youtube
+      title: YouTube
+      url: "https://www.youtube.com/@0xzer0x"
+
+  editPost:
+    URL: "https://github.com/0xzer0x/0xzer0x.github.io/tree/main/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
+
+  ShareButtons:
+    - x
+    - facebook
+    - whatsapp
+    - linkedin
+    - telegram
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      project: projects
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - identifier: projects
+          name: Projects
+          url: projects/
+          weight: 1
+        - name: Blog
+          url: blog/
+          weight: 2
+        - name: Search
+          url: search/
+          weight: 3
+        - name: Tags
+          url: tags/
+          weight: 4
+
+  ar:
+    languageName: "العربية"
+    languagedirection: rtl
+    weight: 2
+    title: "يوسف فتحي"
+    taxonomies:
+      project: projects
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - identifier: projects
+          name: مشاريع
+          url: projects/
+          weight: 1
+        - identifier: blog
+          name: مدونة
+          url: blog/
+          weight: 2
+        - name: بحث
+          url: search/
+          weight: 3
+        - name: وسوم
+          url: tags/
+          weight: 4
+
+    params:
+      profileMode:
+        title: يوسف فتحي
+        subtitle: مهندس DevOps
+        buttons:
+          - name: مشاريع
+            url: projects/
+          - name: السيرة الذاتية
+            url: resume
+
+      editPost:
+        URL: "https://github.com/0xzer0x/0xzer0x.github.io/tree/main/content"
+        Text: اقترح تعديل
+        appendFilePath: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
