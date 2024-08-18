@@ -31,7 +31,7 @@ hideMeta: true
 </ul>
 {{< /job >}}
 <h2><span class="fa-centered">{{< ico fas toolbox >}}</span>&nbsp;Tools &amp; Technologies</h2>
-<table>
+<table class="full-width-table">
   <tr>
     <td><span class="fa-centered">{{< ico simple cplusplus >}}</span>&nbsp;<strong>C++</strong></td>
     <td><span class="fa-centered">{{< ico simple qt >}}</span>&nbsp;<strong>Qt</strong></td>
