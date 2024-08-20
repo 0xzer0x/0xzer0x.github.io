@@ -1,0 +1,44 @@
+languageName: العربية
+languagedirection: rtl
+title: يوسف فتحي
+weight: 2
+taxonomies:
+  project: projects
+  category: categories
+  tag: tags
+  series: series
+menu:
+  main:
+    - identifier: projects
+      name: المشاريع
+      url: projects/
+      weight: 1
+    - identifier: blog
+      name: المدونة
+      url: blog/
+      weight: 2
+    - identifier: resume
+      name: السيرة الذاتية
+      url: resume/
+      weight: 3
+    - name: الوسوم
+      url: tags/
+      weight: 4
+    - name: بحث
+      url: search/
+      weight: 5
+
+params:
+  profileMode:
+    title: يوسف فتحي
+    subtitle: مهندس DevOps
+    buttons:
+      - name: المشاريع
+        url: projects/
+      - name: السيرة الذاتية
+        url: resume/
+
+  editPost:
+    Text: اقترح تعديل
+    URL: https://github.com/0xzer0x/0xzer0x.github.io/tree/main/content
+    appendFilePath: true

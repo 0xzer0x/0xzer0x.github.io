@@ -1,0 +1,27 @@
+languageName: "English"
+weight: 1
+taxonomies:
+  project: projects
+  category: categories
+  tag: tags
+  series: series
+menu:
+  main:
+    - identifier: projects
+      name: Projects
+      url: projects/
+      weight: 1
+    - identifier: blog
+      name: Blog
+      url: blog/
+      weight: 2
+    - identifier: resume
+      name: Resume
+      url: resume/
+      weight: 3
+    - name: Tags
+      url: tags/
+      weight: 4
+    - name: Search
+      url: search/
+      weight: 5

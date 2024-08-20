@@ -1,0 +1,58 @@
+description: Youssef Fathy - Personal website
+author: Youssef Fathy
+mainSections:
+  - blog
+  - projects
+
+defaultTheme: auto
+ShowShareButtons: true
+ShowReadingTime: true
+displayFullLangName: true
+ShowPostNavLinks: true
+ShowBreadCrumbs: true
+ShowCodeCopyButtons: true
+ShowRssButtonInSectionTermList: true
+ShowAllPagesInArchive: true
+ShowPageNums: true
+ShowToc: true
+
+profileMode:
+  enabled: true
+  title: Youssef Fathy
+  subtitle: DevOps Engineer
+  imageUrl: "imgs/me.jpg"
+  imageTitle: me
+  buttons:
+    - name: Projects
+      url: projects/
+    - name: Resume
+      url: resume
+
+socialIcons:
+  - name: github
+    title: GitHub
+    url: https://github.com/0xzer0x
+  - name: linkedin
+    title: LinkedIn
+    url: https://linkedin.com/in/0xzer0x
+  - name: email
+    title: Email
+    url: mailto:youssefessamasu@gmail.com
+  - name: telegram
+    title: Telegram
+    url: https://t.me/Oxzer0x
+  - name: youtube
+    title: YouTube
+    url: https://www.youtube.com/@0xzer0x
+
+editPost:
+  Text: Suggest Changes
+  URL: https://github.com/0xzer0x/0xzer0x.github.io/tree/main/content
+  appendFilePath: true
+
+ShareButtons:
+  - x
+  - facebook
+  - whatsapp
+  - linkedin
+  - telegram
