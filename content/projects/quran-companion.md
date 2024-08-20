@@ -62,7 +62,7 @@ Follow the build instructions on the project repository.<br/>
 
 {{< rawhtml >}}
 
-<div style="display: flex;">
+<div style="display: flex; gap: 1em;">
     <div>
       <ul>
         <li>Sleek, modern interface with dark theme support</li>

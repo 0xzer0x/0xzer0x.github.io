@@ -1,5 +1,5 @@
 ---
-title: السيرة الذاتية
+title: سيرة ذاتية
 ShowReadingTime: false
 hideMeta: true
 ---
@@ -23,15 +23,22 @@ hideMeta: true
     </p>
 </div>
 <h2><span class="fa-centered">{{< ico fab black-tie >}}</span>&nbsp;الخبرة العملية</h2>
+
 {{< job dir="rtl" title="متدرب DevOps" company="سينابس أناليتيكس" from="يوليو 2024" to="سبتمبر 2024" location="القاهرة، مصر" >}}
+
 <ul>
   <li>تحسين ملفات Docker للخدمات التجريبية، مما قلل حجم الصورة النهائية بنسبة 37.5%</li>
   <li>تطوير أدوات وسكريبتات CLI باستخدام Python وBash للاستخدام الداخلي</li>
   <li>تجديد لوحة التحكم Grafana لتصفية المقاييس باستخدام متغيرات اللوحة وعرض تنبيهات Prometheus</li>
 </ul>
+
 {{< /job >}}
+
 <h2><span class="fa-centered">{{< ico fas toolbox >}}</span>&nbsp;الأدوات والتقنيات</h2>
-<table dir="ltr" class="full-width-table">
+
+{{< ltr >}}
+
+<table class="full-width-table">
   <tr>
     <td><span class="fa-centered">{{< ico simple cplusplus >}}</span>&nbsp;<strong>C++</strong></td>
     <td><span class="fa-centered">{{< ico simple qt >}}</span>&nbsp;<strong>Qt</strong></td>
@@ -51,5 +58,7 @@ hideMeta: true
     <td><span class="fa-centered">{{< ico simple yaml >}}</span>&nbsp;<strong>YAML</strong></td>
   </tr>
 </table>
-</body>
+
+{{< /ltr >}}
+
 {{< /rawhtml >}}

@@ -62,20 +62,20 @@ cover:
 
 {{< rawhtml >}}
 
-<div style="display: flex;">
+<div style="display: flex; gap: 1em;">
     <div>
       <ul>
         <li>واجهة أنيقة وعصرية مع دعم الوضع الداكن</li>
         <li>قدرات بحث فائقة السرعة</li>
-        <li>وضعيات عرض مرنة للصفحة الفردية والمزدوجة</li>
+        <li>وضع الصفحتين لتجربة قراءة المصحف المألوفة</li>
         <li>اختر القراءة من صفحة المصحف أو آية بآية</li>
       </ul>
     </div>
     <div>
       <ul>
-        <li>إمكانية تخصيص حجم صفحة القرآن لراحتك</li>
-        <li>الوصول إلى مكتبة غنية من الترجمات والتفاسير</li>
-        <li>الاستماع إلى التلاوات من مجموعة متنوعة من القراء المشهورين</li>
+        <li>إمكانية تخصيص حجم صفحة المصحف</li>
+        <li>مكتبة غنية من الترجمات والتفاسير</li>
+        <li>تلاوات من مجموعة متنوعة من القراء المشهورين</li>
         <li>تعزيز الحفظ مع تكرار التلاوة للآيات المختارة</li>
       </ul>
     </div>
@@ -85,10 +85,10 @@ cover:
 
 # <i><span class="fa-centered">{{< ico fas camera >}}</span></i> لقطات شاشة
 
-![ar_light.png](/imgs/quran-companion/screenshots/ar_light.png#center)  
-![ar_dark.png](/imgs/quran-companion/screenshots/ar_dark.png#center)  
+![ar_light.png](/imgs/quran-companion/screenshots/ar_light.png#center)
+![ar_dark.png](/imgs/quran-companion/screenshots/ar_dark.png#center)
 ![ar_two-page.png](/imgs/quran-companion/screenshots/ar_two-page.png#center)
-![light.png](/imgs/quran-companion/screenshots/light.png#center)  
+![light.png](/imgs/quran-companion/screenshots/light.png#center)
 ![dark.png](/imgs/quran-companion/screenshots/dark.png#center)
 
 # <span class="fa-centered">{{< ico fas code >}}</span> الشيفرة المصدرية

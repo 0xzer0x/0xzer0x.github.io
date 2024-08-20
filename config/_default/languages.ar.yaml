@@ -1,4 +1,4 @@
-languageName: العربية
+languageName: AR
 languagedirection: rtl
 title: يوسف فتحي
 weight: 2
@@ -10,18 +10,18 @@ taxonomies:
 menu:
   main:
     - identifier: projects
-      name: المشاريع
+      name: مشاريع
       url: projects/
       weight: 1
     - identifier: blog
-      name: المدونة
+      name: مدونة
       url: blog/
       weight: 2
     - identifier: resume
-      name: السيرة الذاتية
+      name: سيرة ذاتية
       url: resume/
       weight: 3
-    - name: الوسوم
+    - name: وسوم
       url: tags/
       weight: 4
     - name: بحث
@@ -32,11 +32,6 @@ params:
   profileMode:
     title: يوسف فتحي
     subtitle: مهندس DevOps
-    buttons:
-      - name: المشاريع
-        url: projects/
-      - name: السيرة الذاتية
-        url: resume/
 
   editPost:
     Text: اقترح تعديل

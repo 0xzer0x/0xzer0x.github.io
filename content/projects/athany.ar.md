@@ -41,7 +41,7 @@ cover:
 
 {{< rawhtml >}}
 
-<div style="display: flex;">
+<div style="display: flex; gap: 1em;">
     <div>
       <ul>
         <li>خفيف الوزن</li>

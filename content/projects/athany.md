@@ -41,7 +41,7 @@ Download the source code, install the requirements using `pip`, and run the app 
 
 {{< rawhtml >}}
 
-<div style="display: flex;">
+<div style="display: flex; gap: 1em;">
     <div>
       <ul>
         <li>Lightweight</li>

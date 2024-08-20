@@ -22,11 +22,6 @@ profileMode:
   subtitle: DevOps Engineer
   imageUrl: "imgs/me.jpg"
   imageTitle: me
-  buttons:
-    - name: Projects
-      url: projects/
-    - name: Resume
-      url: resume
 
 socialIcons:
   - name: github
