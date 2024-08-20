@@ -15,12 +15,12 @@ cover:
   image: imgs/athany/social.jpg
 ---
 
-# <span class="fa-centered">{{< ico fas download >}}</span> التثبيت
+# {{< vcenterico fas download >}} التثبيت
 
 <div class="grid-container">
 <div class="grid-item">
 
-### <span class="fa-centered">{{< ico fab windows >}}</span> **ويندوز**
+### {{< vcenterico fab windows >}} **ويندوز**
 
 قم بتنزيل المثبت عبر الإنترنت واتبع خطوات التثبيت.  
 [المثبت ←](https://github.com/0xzer0x/quran-companion/releases/download/v1.1.9/qc_online_installer_x64_win.exe)
@@ -28,7 +28,7 @@ cover:
 </div>
 <div class="grid-item">
 
-### <span class="fa-centered">{{< ico fab python >}}</span> **بايثون**
+### {{< vcenterico fab python >}} **بايثون**
 
 قم بتنزيل الشيفرة المصدرية، ثم قم بتثبيت المتطلبات باستخدام `pip`، وتشغيل التطبيق من المصدر.<br/>
 [التعليمات ←](https://github.com/0xzer0x/athany?tab=readme-ov-file#installation)<br/>
@@ -37,7 +37,7 @@ cover:
 </div>
 </div>
 
-# <span class="fa-centered">{{< ico fas lightbulb >}}</span> الميزات الرئيسية
+# {{< vcenterico fas lightbulb >}} الميزات الرئيسية
 
 {{< rawhtml >}}
 
@@ -60,6 +60,6 @@ cover:
 
 {{< /rawhtml >}}
 
-# <span class="fa-centered">{{< ico fas code >}}</span> الشيفرة المصدرية
+# {{< vcenterico fas code >}} الشيفرة المصدرية
 
 الشيفرة المصدرية لأذاني متاحة في [مستودع GitHub للمشروع](https://github.com/0xzer0x/athany).

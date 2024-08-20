@@ -15,12 +15,12 @@ cover:
   image: imgs/quran-companion/banner.png
 ---
 
-# <span class="fa-centered">{{< ico fas download >}}</span> التثبيت
+# {{< vcenterico fas download >}} التثبيت
 
 <div class="grid-container">
 <div class="grid-item">
 
-### <span class="fa-centered">{{< ico fab windows >}}</span> **ويندوز**
+### {{< vcenterico fab windows >}} **ويندوز**
 
 قم بتنزيل المثبت عبر الإنترنت واتبع خطوات التثبيت.  
 [المثبت ←](https://github.com/0xzer0x/quran-companion/releases/download/v1.1.9/qc_online_installer_x64_win.exe)
@@ -29,7 +29,7 @@ cover:
 
 <div class="grid-item">
 
-### <span class="fa-centered">{{< ico fab linux >}}</span> **لينكس**
+### {{< vcenterico fab linux >}} **لينكس**
 
 قم بتنزيل التطبيق بأي من الحزم المتاحة.  
 [AppImage ←](https://github.com/0xzer0x/quran-companion/releases/download/v1.2.8/Quran_Companion-1.2.8-x86_64.AppImage)  
@@ -41,7 +41,7 @@ cover:
 
 <div class="grid-item">
 
-### <span class="fa-centered">{{< ico fab apple >}}</span> **ماك**
+### {{< vcenterico fab apple >}} **ماك**
 
 قم بتنزيل وفتح ملف dmg الخاص بالتطبيق واسحب التطبيق إلى مجلد التطبيقات _Applications_.  
 [DMG ←](https://github.com/0xzer0x/quran-companion/releases/download/v1.2.8/Quran_Companion-1.2.8-x86_64.dmg)
@@ -50,7 +50,7 @@ cover:
 
 <div class="grid-item">
 
-### <span class="fa-centered">{{< ico fas screwdriver-wrench >}}</span> **البناء من المصدر**
+### {{< vcenterico fas screwdriver-wrench >}} **البناء من المصدر**
 
 اتبع تعليمات البناء على مستودع المشروع.  
 [البناء من المصدر ←](https://github.com/0xzer0x/quran-companion?tab=readme-ov-file#compilation-%EF%B8%8F)
@@ -58,7 +58,7 @@ cover:
 </div>
 </div>
 
-# <span class="fa-centered">{{< ico fas lightbulb >}}</span> الميزات الرئيسية
+# {{< vcenterico fas lightbulb >}} الميزات الرئيسية
 
 {{< rawhtml >}}
 
@@ -83,7 +83,7 @@ cover:
 
 {{< /rawhtml >}}
 
-# <i><span class="fa-centered">{{< ico fas camera >}}</span></i> لقطات شاشة
+# <i>{{< vcenterico fas camera >}}</i> لقطات شاشة
 
 ![ar_light.png](/imgs/quran-companion/screenshots/ar_light.png#center)
 ![ar_dark.png](/imgs/quran-companion/screenshots/ar_dark.png#center)
@@ -91,6 +91,6 @@ cover:
 ![light.png](/imgs/quran-companion/screenshots/light.png#center)
 ![dark.png](/imgs/quran-companion/screenshots/dark.png#center)
 
-# <span class="fa-centered">{{< ico fas code >}}</span> الشيفرة المصدرية
+# {{< vcenterico fas code >}} الشيفرة المصدرية
 
 الشيفرة المصدرية لرفيق القرآن متاحة على [مستودع GitHub الخاص بالمشروع](https://github.com/0xzer0x/quran-companion).

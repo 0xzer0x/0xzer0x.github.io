@@ -15,12 +15,12 @@ cover:
   image: imgs/quran-companion/banner.png
 ---
 
-# <span class="fa-centered">{{< ico fas download >}}</span> Installation
+# {{< vcenterico fas download >}} Installation
 
 <div class="grid-container">
 <div class="grid-item">
 
-### <span class="fa-centered">{{< ico fab windows >}}</span> **Windows**
+### {{< vcenterico fab windows >}} **Windows**
 
 Download the online installer and follow the installation steps.  
 [Installer →](https://github.com/0xzer0x/quran-companion/releases/download/v1.1.9/qc_online_installer_x64_win.exe)
@@ -29,7 +29,7 @@ Download the online installer and follow the installation steps.
 
 <div class="grid-item">
 
-### <span class="fa-centered">{{< ico fab linux >}}</span> **Linux**
+### {{< vcenterico fab linux >}} **Linux**
 
 Download the application in any of the available packages.  
 [AppImage →](https://github.com/0xzer0x/quran-companion/releases/download/v1.2.8/Quran_Companion-1.2.8-x86_64.AppImage)  
@@ -41,7 +41,7 @@ Download the application in any of the available packages.
 
 <div class="grid-item">
 
-### <span class="fa-centered">{{< ico fab apple >}}</span> **MacOS**
+### {{< vcenterico fab apple >}} **MacOS**
 
 Download and open the application dmg and drag the application into your _Applications_.  
 [DMG →](https://github.com/0xzer0x/quran-companion/releases/download/v1.2.8/Quran_Companion-1.2.8-x86_64.dmg)
@@ -50,7 +50,7 @@ Download and open the application dmg and drag the application into your _Applic
 
 <div class="grid-item">
 
-### <span class="fa-centered">{{< ico fas screwdriver-wrench >}}</span> **Build from source**
+### {{< vcenterico fas screwdriver-wrench >}} **Build from source**
 
 Follow the build instructions on the project repository.<br/>
 [Building from source →](https://github.com/0xzer0x/quran-companion?tab=readme-ov-file#compilation-%EF%B8%8F)
@@ -58,7 +58,7 @@ Follow the build instructions on the project repository.<br/>
 </div>
 </div>
 
-# <span class="fa-centered">{{< ico fas lightbulb >}}</span> Key Features
+# {{< vcenterico fas lightbulb >}} Key Features
 
 {{< rawhtml >}}
 
@@ -83,7 +83,7 @@ Follow the build instructions on the project repository.<br/>
 
 {{< /rawhtml >}}
 
-# <span class="fa-centered">{{< ico fas camera >}}</span> Screenshots
+# {{< vcenterico fas camera >}} Screenshots
 
 ![light.png](/imgs/quran-companion/screenshots/light.png#center)
 ![dark.png](/imgs/quran-companion/screenshots/dark.png#center)
@@ -91,6 +91,6 @@ Follow the build instructions on the project repository.<br/>
 ![ar_dark.png](/imgs/quran-companion/screenshots/ar_dark.png#center)
 ![ar_two-page.png](/imgs/quran-companion/screenshots/ar_two-page.png#center)
 
-# <span class="fa-centered">{{< ico fas code >}}</span> Source Code
+# {{< vcenterico fas code >}} Source Code
 
 Quran Companion source code is available at the project's [GitHub repository](https://github.com/0xzer0x/quran-companion).

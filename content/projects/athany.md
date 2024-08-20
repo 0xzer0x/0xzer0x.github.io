@@ -15,12 +15,12 @@ cover:
   image: imgs/athany/social.jpg
 ---
 
-# <span class="fa-centered">{{< ico fas download >}}</span> Installation
+# {{< vcenterico fas download >}} Installation
 
 <div class="grid-container">
 <div class="grid-item">
 
-### <span class="fa-centered">{{< ico fab windows >}}</span> **Windows**
+### {{< vcenterico fab windows >}} **Windows**
 
 Download the online installer and follow the installation steps.  
 [Installer →](https://github.com/0xzer0x/quran-companion/releases/download/v1.1.9/qc_online_installer_x64_win.exe)
@@ -28,7 +28,7 @@ Download the online installer and follow the installation steps.
 </div>
 <div class="grid-item">
 
-### <span class="fa-centered">{{< ico fab python >}}</span> **Python**
+### {{< vcenterico fab python >}} **Python**
 
 Download the source code, install the requirements using `pip`, and run the app from source.<br/>
 [Instructions →](https://github.com/0xzer0x/athany?tab=readme-ov-file#installation)<br/>
@@ -37,7 +37,7 @@ Download the source code, install the requirements using `pip`, and run the app 
 </div>
 </div>
 
-# <span class="fa-centered">{{< ico fas lightbulb >}}</span> Key Features
+# {{< vcenterico fas lightbulb >}} Key Features
 
 {{< rawhtml >}}
 
@@ -60,6 +60,6 @@ Download the source code, install the requirements using `pip`, and run the app 
 
 {{< /rawhtml >}}
 
-# <span class="fa-centered">{{< ico fas code >}}</span> Source Code
+# {{< vcenterico fas code >}} Source Code
 
 Athany source code is available at the project's [GitHub repository](https://github.com/0xzer0x/athany).
