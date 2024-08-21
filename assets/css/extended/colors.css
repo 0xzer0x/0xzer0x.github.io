@@ -1,0 +1,73 @@
+:root {
+  --gap: 24px;
+  --content-gap: 20px;
+  --nav-width: 960px;
+  --main-width: 720px;
+  --post-width: 720px;
+  --header-height: 60px;
+  --footer-height: 80px;
+  --radius: 8px;
+  --monospace: "Lucida Console", Monaco, "Consolas", monospace;
+
+  /* Material Light Theme Colors */
+  --theme: #ffffff; /* Background */
+  --entry: #fafafa; /* Surface */
+  --primary: #212121; /* Primary Text */
+  --primary-dim: #757575; /* Secondary Text */
+  --secondary: #bdbdbd; /* Disabled Text */
+  --tertiary: #e0e0e0; /* Dividers */
+  --tertiary-bg: #eeeeee; /* Background Variant */
+  --content: #424242; /* Content Text */
+  --code-bg: #f5f5f5; /* Code Block Background */
+  --border: #e0e0e0; /* Borders */
+  --link-background-color: #bbdefb; /* Link Background */
+  --link-color: #1976d2; /* Link Text */
+  --link-hover-color: #0d47a1; /* Link Hover */
+  --link-underline-shadow: 0 1px 0 var(--link-color);
+  --link-hover-underline-color: #0d47a1;
+  --link-hover-underline-shadow: 0 2px 0 var(--link-hover-underline-color);
+  --link-transition: all 0.3s ease;
+  --line-yellow: url("data:image/svg+xml;charset=utf-8,%3Csvg preserveAspectRatio='none' width='120' height='6' viewBox='0 0 120 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M119 0.8C60 4 50-0.5 1 1.5' stroke='%23ffc107' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+
+  /* for type pages theming */
+  --signature: var(--primary);
+  --signature-bg: var(--secondary);
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --header-height: 52px;
+  }
+}
+
+.dark {
+  /* Material Dark Theme Colors */
+  --theme: #121212; /* Background */
+  --entry: #1e1e1e; /* Surface */
+  --primary: #ffffff; /* Primary Text */
+  --primary-dim: #b3b3b3; /* Secondary Text */
+  --secondary: #757575; /* Disabled Text */
+  --tertiary: #424242; /* Dividers */
+  --tertiary-bg: #333333; /* Background Variant */
+  --content: #e0e0e0; /* Content Text */
+  --code-bg: #1e1e1e; /* Adjusted Code Block Background */
+  --border: #424242; /* Borders */
+  --link-background-color: #64b5f6; /* Link Background */
+  --link-color: #90caf9; /* Link Text */
+  --link-hover-color: #42a5f5; /* Link Hover */
+  --link-underline-shadow: 0 1px 0 var(--link-color);
+  --link-hover-underline-color: #1e88e5;
+  --link-hover-underline-shadow: 0 2px 0 var(--link-hover-underline-color);
+
+  /* for type pages theming */
+  --signature: var(--primary);
+  --signature-bg: var(--secondary);
+}
+
+.list-page {
+  background: var(--code-bg);
+}
+
+.dark.list-page {
+  background: var(--theme);
+}
