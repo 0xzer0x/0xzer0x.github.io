@@ -18,15 +18,13 @@ I am eager to apply my skills and contribute to a dynamic DevOps environment.
 
 ## {{< vcenterico fas building >}} Work Experience
 
-{{< job title="DevOps Intern" company="Synapse Analytics" from="Jul 2024" to="Sep 2024" location="Cairo, Egypt" >}}
+{{% job title="DevOps Intern" company="Synapse Analytics" from="Jul 2024" to="Sep 2024" location="Cairo, Egypt" %}}
 
-<ul>
-  <li>Optimized Dockerfiles for staging services, reducing final image size by 37.5%</li>
-  <li>Developed Python and Bash CLI tools and scripts for internal use</li>
-  <li>Revamped Grafana dashboard to filter metrics using dashboard variables and show Prometheus alerts</li>
-</ul>
+- Optimized Dockerfiles for staging services, reducing final image size by 37.5%
+- Developed Python and Bash CLI tools and scripts for internal use
+- Revamped Grafana dashboard to filter metrics using dashboard variables and show Prometheus alerts
 
-{{< /job >}}
+{{% /job %}}
 
 ## {{< vcenterico fas toolbox >}} Tools & Technologies
 
