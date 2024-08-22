@@ -4,25 +4,19 @@ ShowReadingTime: false
 hideMeta: true
 ---
 
-{{< rawhtml >}}
+## {{< vcenterico fas user >}} Profile
 
-<h2>{{< vcenterico fas user >}}&nbsp;Profile</h2>
-<div>
-    <p>
-        I am a Computer Science student with a strong academic background and a keen interest in DevOps engineering.
-        I have practical experience in team management, leading university projects that focused on object-oriented programming (OOP).
-    </p>
-    <p>
-        I have a solid understanding of Linux and version control with Git,
-        having deployed CI/CD pipelines using GitHub Actions.
-    </p>
-    <p>
-        With a passion for DevOps engineering,
-        I am committed to continuous learning and professional growth.
-        I am eager to apply my skills and contribute to a dynamic DevOps environment.
-    </p>
-</div>
-<h2>{{< vcenterico fab black-tie >}}&nbsp;Work Experience</h2>
+I am a Computer Science student with a strong academic background and a keen interest in DevOps engineering.
+I have practical experience in team management, leading university projects that focused on object-oriented programming (OOP).
+
+I have a solid understanding of Linux and version control with Git,
+having deployed CI/CD pipelines using GitHub Actions.
+
+With a passion for DevOps engineering,
+I am committed to continuous learning and professional growth.
+I am eager to apply my skills and contribute to a dynamic DevOps environment.
+
+## {{< vcenterico fas building >}} Work Experience
 
 {{< job title="DevOps Intern" company="Synapse Analytics" from="Jul 2024" to="Sep 2024" location="Cairo, Egypt" >}}
 
@@ -34,7 +28,10 @@ hideMeta: true
 
 {{< /job >}}
 
-<h2>{{< vcenterico fas toolbox >}}&nbsp;Tools &amp; Technologies</h2>
+## {{< vcenterico fas toolbox >}} Tools & Technologies
+
+{{< rawhtml >}}
+
 <table class="full-width-table">
   <tr>
     <td>{{< vcenterico simple cplusplus >}}&nbsp;<strong>C++</strong></td>
