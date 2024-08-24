@@ -51,7 +51,7 @@ body {
 }
 
 .fa-centered {
-  vertical-align: -0.1em;
+  vertical-align: middle;
 }
 
 .grid-container {

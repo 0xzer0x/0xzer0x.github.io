@@ -1,0 +1,8 @@
+.admonition-info {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid var(--admonition-info-border);
+  border-radius: var(--radius);
+  background: var(--admonition-info-bg);
+}

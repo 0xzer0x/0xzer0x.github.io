@@ -29,6 +29,9 @@
   --link-transition: all 0.3s ease;
   --line-yellow: url("data:image/svg+xml;charset=utf-8,%3Csvg preserveAspectRatio='none' width='120' height='6' viewBox='0 0 120 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M119 0.8C60 4 50-0.5 1 1.5' stroke='%23ffc107' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
 
+  --admonition-info-bg: #89b4fa55;
+  --admonition-info-border: #89b4fa;
+
   /* for type pages theming */
   --signature: var(--primary);
   --signature-bg: var(--secondary);
