@@ -1,0 +1,44 @@
+#contact-form #contact-name,
+#contact-form #contact-email,
+#contact-form #contact-textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 5px;
+  background: var(--entry);
+  color: var(--primary);
+  border-radius: 5px;
+}
+
+#contact-form #contact-textarea {
+  min-height: 100px;
+}
+
+#contact-form #button-row {
+  display: flex;
+  flex-flow: row-reverse;
+}
+
+#contact-form button {
+  width: 200px;
+  height: 40px;
+  padding: 0px 15px;
+  background: var(--tertiary-bg);
+  border-radius: var(--radius);
+  color: var(--primary);
+  border: 1px solid var(--secondary);
+  position: relative;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  text-align: center;
+}
+
+#contact-form button:hover {
+  background: var(--tertiary);
+  transition-duration: 0.2s;
+}
+
+#contact-form button:active {
+  transform: translate(1px, 1px);
+  transition-duration: 0.2s;
+}
