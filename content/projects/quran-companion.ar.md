@@ -32,9 +32,9 @@ cover:
 ### {{< vcenterico fab linux >}} **لينكس**
 
 قم بتنزيل التطبيق بأي من الحزم المتاحة.  
-[AppImage ←](https://github.com/0xzer0x/quran-companion/releases/download/v1.2.8/Quran_Companion-1.2.8-x86_64.AppImage)  
-[Flatpak ←](https://flathub.org/apps/io.github._0xzer0x.qurancompanion)  
-[Snap ←](https://snapcraft.io/quran-companion)  
+[AppImage ←](https://github.com/0xzer0x/quran-companion/releases/download/v1.2.9/Quran_Companion-1.2.9-x86_64.AppImage)
+[Flatpak ←](https://flathub.org/apps/io.github._0xzer0x.qurancompanion)
+[Snap ←](https://snapcraft.io/quran-companion)
 [AUR ←](https://aur.archlinux.org/packages/quran-companion)
 
 </div>
@@ -44,7 +44,7 @@ cover:
 ### {{< vcenterico fab apple >}} **ماك**
 
 قم بتنزيل وفتح ملف dmg الخاص بالتطبيق واسحب التطبيق إلى مجلد التطبيقات _Applications_.  
-[DMG ←](https://github.com/0xzer0x/quran-companion/releases/download/v1.2.8/Quran_Companion-1.2.8-x86_64.dmg)
+[DMG ←](https://github.com/0xzer0x/quran-companion/releases/download/v1.2.9/Quran_Companion-1.2.9-x86_64.dmg)
 
 </div>
 
