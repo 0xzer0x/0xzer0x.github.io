@@ -31,10 +31,10 @@ Download the online installer and follow the installation steps.
 
 ### {{< vcenterico fab linux >}} **Linux**
 
-Download the application in any of the available packages.  
-[AppImage →](https://github.com/0xzer0x/quran-companion/releases/download/v1.2.9/Quran_Companion-1.2.9-x86_64.AppImage)
-[Flatpak →](https://flathub.org/apps/io.github._0xzer0x.qurancompanion)
-[Snap →](https://snapcraft.io/quran-companion)
+Download the application in any of the available packages.<br/>
+[AppImage →](https://github.com/0xzer0x/quran-companion/releases/download/v1.2.9/Quran_Companion-1.2.9-x86_64.AppImage)<br/>
+[Flatpak →](https://flathub.org/apps/io.github._0xzer0x.qurancompanion)<br/>
+[Snap →](https://snapcraft.io/quran-companion)<br/>
 [AUR →](https://aur.archlinux.org/packages/quran-companion)
 
 </div>
@@ -53,7 +53,7 @@ Download and open the application dmg and drag the application into your _Applic
 ### {{< vcenterico fas screwdriver-wrench >}} **Build from source**
 
 Follow the build instructions on the project repository.<br/>
-[Building from source →](https://github.com/0xzer0x/quran-companion?tab=readme-ov-file#compilation-%EF%B8%8F)
+[Build instructions →](https://github.com/0xzer0x/quran-companion?tab=readme-ov-file#compilation-%EF%B8%8F)
 
 </div>
 </div>

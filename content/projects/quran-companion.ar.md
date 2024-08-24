@@ -31,10 +31,10 @@ cover:
 
 ### {{< vcenterico fab linux >}} **لينكس**
 
-قم بتنزيل التطبيق بأي من الحزم المتاحة.  
-[AppImage ←](https://github.com/0xzer0x/quran-companion/releases/download/v1.2.9/Quran_Companion-1.2.9-x86_64.AppImage)
-[Flatpak ←](https://flathub.org/apps/io.github._0xzer0x.qurancompanion)
-[Snap ←](https://snapcraft.io/quran-companion)
+قم بتنزيل التطبيق بأي من الحزم المتاحة.
+[AppImage ←](https://github.com/0xzer0x/quran-companion/releases/download/v1.2.9/Quran_Companion-1.2.9-x86_64.AppImage)<br/>
+[Flatpak ←](https://flathub.org/apps/io.github._0xzer0x.qurancompanion)<br/>
+[Snap ←](https://snapcraft.io/quran-companion)<br/>
 [AUR ←](https://aur.archlinux.org/packages/quran-companion)
 
 </div>
@@ -53,7 +53,7 @@ cover:
 ### {{< vcenterico fas screwdriver-wrench >}} **البناء من المصدر**
 
 اتبع تعليمات البناء على مستودع المشروع.  
-[البناء من المصدر ←](https://github.com/0xzer0x/quran-companion?tab=readme-ov-file#compilation-%EF%B8%8F)
+[تعليمات البناء ←](https://github.com/0xzer0x/quran-companion?tab=readme-ov-file#compilation-%EF%B8%8F)
 
 </div>
 </div>
