@@ -1,4 +1,5 @@
 ---
+weight: 1
 title: رفيق القرآن
 summary: قارئ ومشغل قرآن مجاني ومفتوح المصدر لسطح المكتب
 description: قارئ ومشغل قرآن مجاني ومفتوح المصدر لسطح المكتب
@@ -32,7 +33,7 @@ cover:
 ### {{< vcenterico fab linux >}} **لينكس**
 
 قم بتنزيل التطبيق بأي من الحزم المتاحة.
-[AppImage ←](https://github.com/0xzer0x/quran-companion/releases/download/v1.2.9/Quran_Companion-1.2.9-x86_64.AppImage)<br/>
+[AppImage ←](https://github.com/0xzer0x/quran-companion/releases/download/v1.3.0/Quran_Companion-1.3.0-x86_64.AppImage)<br/>
 [Flatpak ←](https://flathub.org/apps/io.github._0xzer0x.qurancompanion)<br/>
 [Snap ←](https://snapcraft.io/quran-companion)<br/>
 [AUR ←](https://aur.archlinux.org/packages/quran-companion)
@@ -44,7 +45,7 @@ cover:
 ### {{< vcenterico fab apple >}} **ماك**
 
 قم بتنزيل وفتح ملف dmg الخاص بالتطبيق واسحب التطبيق إلى مجلد التطبيقات _Applications_.  
-[DMG ←](https://github.com/0xzer0x/quran-companion/releases/download/v1.2.9/Quran_Companion-1.2.9-x86_64.dmg)
+[DMG ←](https://github.com/0xzer0x/quran-companion/releases/download/v1.3.0/Quran_Companion-1.3.0-x86_64.dmg)
 
 </div>
 
@@ -87,8 +88,8 @@ cover:
 
 ![ar_light.png](/imgs/quran-companion/screenshots/ar_light.png#center)
 ![ar_dark.png](/imgs/quran-companion/screenshots/ar_dark.png#center)
-![ar_two-page.png](/imgs/quran-companion/screenshots/ar_two-page.png#center)
 ![light.png](/imgs/quran-companion/screenshots/light.png#center)
+![two-pages.png](/imgs/quran-companion/screenshots/two-pages.png#center)
 ![dark.png](/imgs/quran-companion/screenshots/dark.png#center)
 
 # {{< vcenterico fas code >}} الشيفرة المصدرية

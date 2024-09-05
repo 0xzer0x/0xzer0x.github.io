@@ -47,7 +47,7 @@ cd prayer-times
 
 ### Prerequisites
 
-Before using the script, you have the following dependencies installed on your system:
+Before using the script, you need to have the following dependencies installed on your system:
 
 - `jq`
 - `at`
@@ -63,24 +63,24 @@ Before using the script, you have the following dependencies installed on your s
 #### Ubuntu
 
 ```bash
-sudo apt install jq at yad mpv curl dunst polybar mako
+sudo apt install jq at yad mpv curl dunst polybar mako waybar
 ```
 
 #### Fedora
 
 ```bash
-sudo dnf install jq at yad mpv curl dunst polybar mako
+sudo dnf install jq at yad mpv curl dunst polybar mako waybar
 ```
 
 #### Arch
 
 ```bash
-sudo pacman -S jq at yad mpv curl dunst polybar mako
+sudo pacman -S jq at yad mpv curl dunst polybar mako waybar
 ```
 
 ### Installation
 
-You need to copy the files from [`0xzer0x/prayer-times`](https://github.com/0xzer0x/prayer-times/tree/main/.local/bin) to the following paths:
+You need to copy the files from [`0xzer0x/prayer-times`](https://github.com/0xzer0x/prayer-times) to the following paths:
 
 - `.local/bin`: `~/.local/bin`
 - `.local/share/qatami_takbeer.mp3`: `~/.local/share/qatami_takbeer.mp3`

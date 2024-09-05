@@ -27,7 +27,7 @@ cover:
 
 ## البداية السريعة
 
-لتثبيت سكريبت تتبع أوقات الصلاة بسرعة، اتبع هذه الخطوات:
+لتثبيت سكريبت مواقيت الصلاة بسرعة، اتبع هذه الخطوات:
 
 1. استنساخ المستودع:
 
@@ -62,24 +62,24 @@ cd prayer-times
 #### أوبونتو
 
 ```bash
-sudo apt install jq at yad mpv curl dunst polybar mako
+sudo apt install jq at yad mpv curl dunst polybar mako waybar
 ```
 
 #### فيدورا
 
 ```bash
-sudo dnf install jq at yad mpv curl dunst polybar mako
+sudo dnf install jq at yad mpv curl dunst polybar mako waybar
 ```
 
 #### آرتش
 
 ```bash
-sudo pacman -S jq at yad mpv curl dunst polybar mako
+sudo pacman -S jq at yad mpv curl dunst polybar mako waybar
 ```
 
 ### التثبيت
 
-يجب عليك نسخ الملفات من [`0xzer0x/prayer-times`](https://github.com/0xzer0x/prayer-times/tree/main/.local/bin) إلى المسارات التالية:
+يجب عليك نسخ الملفات من [`0xzer0x/prayer-times`](https://github.com/0xzer0x/prayer-times) إلى المسارات التالية:
 
 {{< ltr >}}
 

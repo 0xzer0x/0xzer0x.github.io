@@ -1,4 +1,5 @@
 ---
+weight: 2
 title: Athany
 summary: Accurate prayer times calculator and notifier
 description: Accurate prayer times calculator and notifier

@@ -1,4 +1,5 @@
 ---
+weight: 1
 title: Quran Companion
 summary: Free and open-source desktop Quran reader and player
 description: Free and open-source desktop Quran reader and player
@@ -32,7 +33,7 @@ Download the online installer and follow the installation steps.
 ### {{< vcenterico fab linux >}} **Linux**
 
 Download the application in any of the available packages.<br/>
-[AppImage →](https://github.com/0xzer0x/quran-companion/releases/download/v1.2.9/Quran_Companion-1.2.9-x86_64.AppImage)<br/>
+[AppImage →](https://github.com/0xzer0x/quran-companion/releases/download/v1.3.0/Quran_Companion-1.3.0-x86_64.AppImage)<br/>
 [Flatpak →](https://flathub.org/apps/io.github._0xzer0x.qurancompanion)<br/>
 [Snap →](https://snapcraft.io/quran-companion)<br/>
 [AUR →](https://aur.archlinux.org/packages/quran-companion)
@@ -44,7 +45,7 @@ Download the application in any of the available packages.<br/>
 ### {{< vcenterico fab apple >}} **MacOS**
 
 Download and open the application dmg and drag the application into your _Applications_.  
-[DMG →](https://github.com/0xzer0x/quran-companion/releases/download/v1.2.9/Quran_Companion-1.2.9-x86_64.dmg)
+[DMG →](https://github.com/0xzer0x/quran-companion/releases/download/v1.3.0/Quran_Companion-1.3.0-x86_64.dmg)
 
 </div>
 
@@ -86,10 +87,10 @@ Follow the build instructions on the project repository.<br/>
 # {{< vcenterico fas camera >}} Screenshots
 
 ![light.png](/imgs/quran-companion/screenshots/light.png#center)
+![two-pages.png](/imgs/quran-companion/screenshots/two-pages.png#center)
 ![dark.png](/imgs/quran-companion/screenshots/dark.png#center)
 ![ar_light.png](/imgs/quran-companion/screenshots/ar_light.png#center)
 ![ar_dark.png](/imgs/quran-companion/screenshots/ar_dark.png#center)
-![ar_two-page.png](/imgs/quran-companion/screenshots/ar_two-page.png#center)
 
 # {{< vcenterico fas code >}} Source Code
 
