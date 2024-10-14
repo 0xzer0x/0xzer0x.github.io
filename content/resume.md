@@ -18,6 +18,12 @@ I am eager to apply my skills and contribute to a dynamic DevOps environment.
 
 ## {{< vcenterico fas building >}} Work Experience
 
+{{% job title="DevOps Engineer" company="Synapse Analytics" from="Oct 2024" to="Present" location="Cairo, Egypt" %}}
+
+- Manage production servers using Ansible
+
+{{% /job %}}
+
 {{% job title="DevOps Intern" company="Synapse Analytics" from="Jul 2024" to="Sep 2024" location="Cairo, Egypt" %}}
 
 - Optimized Dockerfiles for staging services, reducing final image size by 37.5%

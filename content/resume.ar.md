@@ -18,6 +18,12 @@ hideMeta: true
 
 ## {{< vcenterico fas building >}} الخبرة العملية
 
+{{% job dir="rtl" title="مهندس DevOps" company="سينابس أناليتيكس" from="أكتوبر 2024" to="الآن" location="القاهرة، مصر" %}}
+
+- إدارة الخوادم باستخدام Ansible
+
+{{% /job %}}
+
 {{% job dir="rtl" title="متدرب DevOps" company="سينابس أناليتيكس" from="يوليو 2024" to="سبتمبر 2024" location="القاهرة، مصر" %}}
 
 - تحسين ملفات Docker للخدمات التجريبية، مما قلل حجم الصورة النهائية بنسبة 37.5%
