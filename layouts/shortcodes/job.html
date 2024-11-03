@@ -1,9 +1,9 @@
 <div class="job">
   <div class="job-left{{ if eq (.Get "dir") "rtl"}}-rtl{{ end }}">
     {{- if .Get "company" -}}
-      <b>{{- .Get "company" -}}</b></br>
+      <b class="job-company">{{- .Get "company" -}}</b></br>
     {{- end -}}
-    <i>{{- .Get "title" -}}</i>
+    <span class="job-title">{{- .Get "title" -}}</span>
     {{- .Inner -}}
   </div>
   <div class="job-right{{ if eq (.Get "dir") "rtl"}}-rtl{{ end }}">
