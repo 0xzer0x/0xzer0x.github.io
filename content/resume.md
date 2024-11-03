@@ -20,11 +20,12 @@ I am eager to apply my skills and contribute to a dynamic DevOps environment.
 
 {{% job title="DevOps Engineer" company="Synapse Analytics" from="Oct 2024" to="Present" location="Cairo, Egypt" %}}
 
-- Manage production servers using Ansible
+- Refactored deployment playbooks for modularity and efficiency
+- Optimized GitLab CI by switching to Buildah for container builds
 
 {{% /job %}}
 
-{{% job title="DevOps Intern" company="Synapse Analytics" from="Jul 2024" to="Sep 2024" location="Cairo, Egypt" %}}
+{{% job title="DevOps Intern" from="Jul 2024" to="Sep 2024" %}}
 
 - Optimized Dockerfiles for staging services, reducing final image size by 37.5%
 - Developed Python and Bash CLI tools and scripts for internal use
