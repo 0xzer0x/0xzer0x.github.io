@@ -6,22 +6,16 @@ hideMeta: true
 
 ## {{< vcenterico fas user >}} الملف الشخصي
 
-أنا طالب في علوم الكمبيوتر ولدي خلفية أكاديمية قوية واهتمام كبير بهندسة DevOps.
-لدي خبرة عملية في إدارة الفرق وقيادة مشاريع الجامعة التي تركزت على البرمجة الكائنية (OOP).
+مهندس بطبيعتي، شغوف بالأتمتة والبنية التحتية السحابية والأنظمة القابلة للتوسع.
 
-لدي فهم قوي لنظام Linux والتحكم في الإصدارات باستخدام Git،
-وقد قمت بنشر خطوط أنابيب CI/CD باستخدام GitHub Actions.
+أتخصص في DevOps والتقنيات السحابية وموثوقية الأنظمة، مستفيدًا من خبرتي في Linux والأتمتة وCI/CD لتحسين سير العمل وتعزيز المراقبة. أستمتع بحل المشكلات المعقدة، وتحسين عمليات النشر، والارتقاء بالبنية التحتية باستمرار.
 
-بشغف لهندسة DevOps،
-أنا ملتزم بالتعلم المستمر والنمو المهني.
-أتطلع لتطبيق مهاراتي والمساهمة في بيئة DevOps ديناميكية.
-
-## {{< vcenterico fas building >}} الخبرة العملية
+## {{< vcenterico fas building >}} الخبرات
 
 {{% job dir="rtl" title="مهندس DevOps" company="سينابس أناليتيكس" from="أكتوبر 2024" to="الآن" location="القاهرة، مصر" %}}
 
-- إعادة هيكلة سيناريوهات Ansible لجعلها أكثر مرونة وكفاءة
-- تحسين خط أنابيب GitLab CI من خلال التحول إلى Buildah لبناء الحاويات
+- قلّصت حجم صورة الإنتاج بنسبة 28.8٪ عبر استبدال Docker-in-Docker بـ Buildah في خطوط CI.
+- طوّرت ونشرت خدمتين بلغة بايثون لإدارة عمليات النشر المحلية وأتمتة المهام اليدوية باستخدام FastAPI وCelery.
 
 {{% /job %}}
 
@@ -33,6 +27,10 @@ hideMeta: true
 
 {{% /job %}}
 
+## {{< vcenterico fas building >}} الشهادات
+
+- [AWS Certified Developer - Associate, Amazon Web Services (AWS)](https://www.credly.com/badges/2f2cff62-d9eb-4c79-ae56-1768be42cbfb/public_url)
+
 ## {{< vcenterico fas toolbox >}} الأدوات والتقنيات
 
 {{< rawhtml >}}
@@ -40,10 +38,10 @@ hideMeta: true
 
 <table class="full-width-table">
   <tr>
+    <td>{{< vcenterico simple python >}}&nbsp;<strong>Python</strong></td>
     <td>{{< vcenterico simple cplusplus >}}&nbsp;<strong>C++</strong></td>
     <td>{{< vcenterico simple qt >}}&nbsp;<strong>Qt</strong></td>
-    <td>{{< vcenterico simple openjdk >}}&nbsp;<strong>Java</strong></td>
-    <td>{{< vcenterico simple python >}}&nbsp;<strong>Python</strong></td>
+    <td>{{< vcenterico simple amazonwebservices >}}&nbsp;<strong>AWS</strong></td>
   </tr>
   <tr>
     <td>{{< vcenterico simple linux >}}&nbsp;<strong>Linux</strong></td>

@@ -6,22 +6,16 @@ hideMeta: true
 
 ## {{< vcenterico fas user >}} Profile
 
-I am a Computer Science student with a strong academic background and a keen interest in DevOps engineering.
-I have practical experience in team management, leading university projects that focused on object-oriented programming (OOP).
+An engineer at heart with a passion for automation, cloud infrastructure, and scalable systems.
 
-I have a solid understanding of Linux and version control with Git,
-having deployed CI/CD pipelines using GitHub Actions.
+I specialize in DevOps, cloud technologies, and system reliability, leveraging my expertise in Linux, automation, and CI/CD to streamline workflows and enhance observability. I enjoy solving complex problems, optimizing deployments, and continuously improving infrastructure.
 
-With a passion for DevOps engineering,
-I am committed to continuous learning and professional growth.
-I am eager to apply my skills and contribute to a dynamic DevOps environment.
-
-## {{< vcenterico fas building >}} Work Experience
+## {{< vcenterico fas building >}} Experiences
 
 {{% job title="DevOps Engineer" company="Synapse Analytics" from="Oct 2024" to="Present" location="Cairo, Egypt" %}}
 
-- Refactored deployment playbooks for modularity and efficiency
-- Optimized GitLab CI by switching to Buildah for container builds
+• Reduced production image size by 28.8% by migrating CI pipelines to using Buildah instead of Docker-in-Docker<br/>
+• Developed, packaged, and deployed 2 Python services for controlling on-premise deployment and automating manual tasks using FastAPI and Celery
 
 {{% /job %}}
 
@@ -33,16 +27,20 @@ I am eager to apply my skills and contribute to a dynamic DevOps environment.
 
 {{% /job %}}
 
+## {{< vcenterico fas certificate >}} Certificates
+
+- [AWS Certified Developer - Associate, Amazon Web Services (AWS)](https://www.credly.com/badges/2f2cff62-d9eb-4c79-ae56-1768be42cbfb/public_url)
+
 ## {{< vcenterico fas toolbox >}} Tools & Technologies
 
 {{< rawhtml >}}
 
 <table class="full-width-table">
   <tr>
+    <td>{{< vcenterico simple python >}}&nbsp;<strong>Python</strong></td>
     <td>{{< vcenterico simple cplusplus >}}&nbsp;<strong>C++</strong></td>
     <td>{{< vcenterico simple qt >}}&nbsp;<strong>Qt</strong></td>
-    <td>{{< vcenterico simple openjdk >}}&nbsp;<strong>Java</strong></td>
-    <td>{{< vcenterico simple python >}}&nbsp;<strong>Python</strong></td>
+    <td>{{< vcenterico simple amazonwebservices >}}&nbsp;<strong>AWS</strong></td>
   </tr>
   <tr>
     <td>{{< vcenterico simple linux >}}&nbsp;<strong>Linux</strong></td>
