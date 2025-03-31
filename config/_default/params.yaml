@@ -20,7 +20,7 @@ profileMode:
   enabled: true
   title: Youssef Fathy
   subtitle: DevOps Engineer
-  imageUrl: "imgs/me.jpg"
+  imageUrl: imgs/me.png
   imageTitle: me
 
 socialIcons:
