@@ -14,8 +14,10 @@ I specialize in DevOps, cloud technologies, and system reliability, leveraging m
 
 {{% job title="DevOps Engineer" company="Synapse Analytics" from="Oct 2024" to="Present" location="Cairo, Egypt" %}}
 
-• Reduced production image size by 28.8% by migrating CI pipelines to using Buildah instead of Docker-in-Docker<br/>
-• Developed, packaged, and deployed 2 Python services for controlling on-premise deployment and automating manual tasks using FastAPI and Celery
+- Design and maintain an internal Python package and CLI for license generation, validation, and secure distribution, integrated with AWS KMS, DynamoDB, and SSM Parameter Store; adopted across 3 core products
+- Cut Amazon RDS costs by 45.9% for a key client by switching to burstable Graviton instances
+- Reduced production container image size by 28.8% by transitioning CI pipelines from Docker-in-Docker to Buildah
+- Refactored 20+ Ansible roles to improve modularity, reusability, and long-term maintainability of infrastructure automation
 
 {{% /job %}}
 
@@ -38,8 +40,8 @@ I specialize in DevOps, cloud technologies, and system reliability, leveraging m
 <table class="full-width-table">
   <tr>
     <td>{{< vcenterico simple python >}}&nbsp;<strong>Python</strong></td>
-    <td>{{< vcenterico simple cplusplus >}}&nbsp;<strong>C++</strong></td>
-    <td>{{< vcenterico simple qt >}}&nbsp;<strong>Qt</strong></td>
+    <td>{{< vcenterico simple go >}}&nbsp;<strong>Go</strong></td>
+    <td>{{< vcenterico simple yaml >}}&nbsp;<strong>YAML</strong></td>
     <td>{{< vcenterico simple amazonwebservices >}}&nbsp;<strong>AWS</strong></td>
   </tr>
   <tr>
@@ -51,8 +53,8 @@ I specialize in DevOps, cloud technologies, and system reliability, leveraging m
   <tr>
     <td>{{< vcenterico simple git >}}&nbsp;<strong>Git</strong></td>
     <td>{{< vcenterico simple github >}}&nbsp;<strong>GitHub</strong></td>
+    <td>{{< vcenterico simple gitlab >}}&nbsp;<strong>GitLab</strong></td>
     <td>{{< vcenterico simple gnubash >}}&nbsp;<strong>Bash</strong></td>
-    <td>{{< vcenterico simple yaml >}}&nbsp;<strong>YAML</strong></td>
   </tr>
 </table>
 

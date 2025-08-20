@@ -14,8 +14,10 @@ hideMeta: true
 
 {{% job dir="rtl" title="مهندس DevOps" company="سينابس أناليتيكس" from="أكتوبر 2024" to="الآن" location="القاهرة، مصر" %}}
 
-- قلّصت حجم صورة الإنتاج بنسبة 28.8٪ عبر استبدال Docker-in-Docker بـ Buildah في خطوط CI.
-- طوّرت ونشرت خدمتين بلغة بايثون لإدارة عمليات النشر المحلية وأتمتة المهام اليدوية باستخدام FastAPI وCelery.
+- تصميم وصيانة حزمة داخلية بلغة Python وواجهة سطر أوامر (CLI) لتوليد التراخيص والتحقق من صحتها وتوزيعها بشكل آمن، مدمجة مع AWS KMS وDynamoDB وSSM Parameter Store، وتم اعتمادها عبر 3 منتجات رئيسية.
+- خفض تكاليف Amazon RDS بنسبة 45.9% لأحد العملاء الرئيسيين من خلال التحويل إلى مثيلات Graviton القابلة للاندفاع.
+- تقليص حجم صور الحاويات الإنتاجية بنسبة 28.8% عبر الانتقال من Docker-in-Docker إلى Buildah في خطوط التكامل المستمر (CI pipelines).
+- إعادة هيكلة أكثر من 20 دور (role) في Ansible لتعزيز البنية المعيارية، وقابلية إعادة الاستخدام، وقابلية الصيانة طويلة الأمد في أتمتة البنية التحتية.
 
 {{% /job %}}
 
@@ -39,8 +41,8 @@ hideMeta: true
 <table class="full-width-table">
   <tr>
     <td>{{< vcenterico simple python >}}&nbsp;<strong>Python</strong></td>
-    <td>{{< vcenterico simple cplusplus >}}&nbsp;<strong>C++</strong></td>
-    <td>{{< vcenterico simple qt >}}&nbsp;<strong>Qt</strong></td>
+    <td>{{< vcenterico simple go >}}&nbsp;<strong>Go</strong></td>
+    <td>{{< vcenterico simple yaml >}}&nbsp;<strong>YAML</strong></td>
     <td>{{< vcenterico simple amazonwebservices >}}&nbsp;<strong>AWS</strong></td>
   </tr>
   <tr>
@@ -52,8 +54,8 @@ hideMeta: true
   <tr>
     <td>{{< vcenterico simple git >}}&nbsp;<strong>Git</strong></td>
     <td>{{< vcenterico simple github >}}&nbsp;<strong>GitHub</strong></td>
+    <td>{{< vcenterico simple gitlab >}}&nbsp;<strong>GitLab</strong></td>
     <td>{{< vcenterico simple gnubash >}}&nbsp;<strong>Bash</strong></td>
-    <td>{{< vcenterico simple yaml >}}&nbsp;<strong>YAML</strong></td>
   </tr>
 </table>
 
