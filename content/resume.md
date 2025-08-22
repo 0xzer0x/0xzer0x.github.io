@@ -31,6 +31,7 @@ I specialize in DevOps, cloud technologies, and system reliability, leveraging m
 
 ## {{< vcenterico fas certificate >}} Certificates
 
+- [AWS Certified Solutions Architect - Associate, Amazon Web Services (AWS)](https://www.credly.com/badges/140c905e-6216-4f41-9f20-bb38a62979e5/public_url)
 - [AWS Certified Developer - Associate, Amazon Web Services (AWS)](https://www.credly.com/badges/2f2cff62-d9eb-4c79-ae56-1768be42cbfb/public_url)
 
 ## {{< vcenterico fas toolbox >}} Tools & Technologies
