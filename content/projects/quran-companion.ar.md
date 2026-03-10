@@ -44,7 +44,7 @@ cover:
 
 ### {{< vcenterico fab apple >}} **ماك**
 
-قم بتنزيل وفتح ملف dmg الخاص بالتطبيق واسحب التطبيق إلى مجلد التطبيقات _Applications_.  
+قم بتنزيل وفتح ملف dmg الخاص بالتطبيق واسحب التطبيق إلى مجلد التطبيقات _Applications_.<br/>
 [DMG ←](https://github.com/0xzer0x/quran-companion/releases/download/v1.5.0/Quran_Companion-1.5.0-x86_64.dmg)
 
 </div>

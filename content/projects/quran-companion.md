@@ -44,7 +44,7 @@ Download the application in any of the available packages.<br/>
 
 ### {{< vcenterico fab apple >}} **MacOS**
 
-Download and open the application dmg and drag the application into your _Applications_.
+Download and open the application dmg and drag the application into your _Applications_.<br/>
 [DMG →](https://github.com/0xzer0x/quran-companion/releases/download/v1.5.0/Quran_Companion-1.5.0-x86_64.dmg)
 
 </div>
