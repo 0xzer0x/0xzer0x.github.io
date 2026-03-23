@@ -24,7 +24,7 @@ cover:
 ### {{< vcenterico fab windows >}} **Windows**
 
 Download the installer and follow the installation steps.<br/>
-[Installer →](https://github.com/0xzer0x/quran-companion/releases/download/v1.5.0/Quran_Companion-1.5.0-x86_64-setup.exe)
+[Installer →](https://github.com/0xzer0x/quran-companion/releases/download/v1.5.1/Quran_Companion-1.5.1-x86_64-setup.exe)
 
 </div>
 
@@ -33,7 +33,7 @@ Download the installer and follow the installation steps.<br/>
 ### {{< vcenterico fab linux >}} **Linux**
 
 Download the application in any of the available packages.<br/>
-[AppImage →](https://github.com/0xzer0x/quran-companion/releases/download/v1.5.0/Quran_Companion-1.5.0-x86_64.AppImage)<br/>
+[AppImage →](https://github.com/0xzer0x/quran-companion/releases/download/v1.5.1/Quran_Companion-1.5.1-x86_64.AppImage)<br/>
 [Flatpak →](https://flathub.org/apps/io.github._0xzer0x.qurancompanion)<br/>
 [Snap →](https://snapcraft.io/quran-companion)<br/>
 [AUR →](https://aur.archlinux.org/packages/quran-companion)
@@ -45,7 +45,7 @@ Download the application in any of the available packages.<br/>
 ### {{< vcenterico fab apple >}} **MacOS**
 
 Download and open the application dmg and drag the application into your _Applications_.<br/>
-[DMG →](https://github.com/0xzer0x/quran-companion/releases/download/v1.5.0/Quran_Companion-1.5.0-x86_64.dmg)
+[DMG →](https://github.com/0xzer0x/quran-companion/releases/download/v1.5.1/Quran_Companion-1.5.1-x86_64.dmg)
 
 </div>
 
