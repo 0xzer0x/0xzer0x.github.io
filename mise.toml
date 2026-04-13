@@ -16,3 +16,7 @@ prek = "0.3"
 description = "Install all dependencies"
 alias = "i"
 run = ["mise --locked install", "hugo mod vendor", "prek install"]
+
+[tasks.dev]
+description = "Run Hugo dev server"
+run = "hugo serve"

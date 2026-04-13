@@ -14,9 +14,10 @@ I specialize in DevOps, cloud technologies, and system reliability, leveraging m
 
 {{% job title="DevOps Engineer" company="Synapse Analytics" from="Oct 2024" to="Present" location="Cairo, Egypt" %}}
 
+- Hardened 9 Kubernetes microservices using network policies and strict security contexts, improving isolation and reducing attack surface.
+- Operated an internal EKS cluster hosting GitLab for 30+ engineers across different departments, ensuring uptime, upgrades, and issue resolution.
 - Design and maintain an internal Python package and CLI for license generation, validation, and secure distribution, integrated with AWS KMS, DynamoDB, and SSM Parameter Store; adopted across 3 core products.
 - Optimized Azkavision cloud deployments’ architecture by eliminating redundancy and adopting Graviton instances and RDS RIs, cutting AWS costs by 37%.
-- Cut Amazon RDS costs by 45.9% for a key client by switching to burstable Graviton instances.
 - Reduced production container image size by 28.8% by transitioning CI pipelines from Docker-in-Docker to Buildah.
 - Refactored 20+ Ansible roles to improve modularity, reusability, and long-term maintainability of infrastructure automation.
 
