@@ -5,10 +5,10 @@ lockfile = true
 [tools]
 # NOTE: Hugo
 go = "1.23"
-hugo = "0.160.1"
+hugo = "0.160"
 # NOTE: Linters and formatters
-oxfmt = "0.44.0"
-tombi = "0.9.17"
+oxfmt = "0.44"
+tombi = "0.9"
 # NOTE: Utils
 prek = "0.3"
 
