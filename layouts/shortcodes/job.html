@@ -3,13 +3,13 @@
     {{- if .Get "company" -}}
       <b class="job-company">{{- .Get "company" -}}</b></br>
     {{- end -}}
-    <span class="job-title">{{- .Get "title" -}}</span>
+    <span class="job-title"><i>{{- .Get "title" -}}</i></span>
     {{- .Inner -}}
   </div>
   <div class="job-right{{ if eq (.Get "dir") "rtl"}}-rtl{{ end }}">
     {{- if .Get "location" -}}
-      <i>{{- .Get "location" -}}</i></br>
+      {{- .Get "location" -}}</br>
     {{- end -}}
-    <i>{{- .Get "from" }} - {{ .Get "to" -}}</i>
+    {{- .Get "from" }} - {{ .Get "to" -}}
   </div>
 </div>
