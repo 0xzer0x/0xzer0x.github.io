@@ -10,6 +10,12 @@ hideMeta: true
 
 ## {{< vcenterico fas building >}} الخبرات
 
+{{% job dir="rtl" title="مهندس DevOps" company="ثاندر" from="مايو 2026" to="الآن" location="القاهرة، مصر" %}}
+
+- قدت ترحيل بيئة EGX Staging من البنية التحتية المحلية المعتمدة على K3s وVMs إلى AWS، مع نقل 10 خدمات مصغّرة وأكثر من 7 مكونات تخزينية وخدمية ذات حالة إلى خدمات EKS وEC2 وRDS وElastiCache بنجاح خلال شهر واحد.
+
+{{% /job %}}
+
 {{% job dir="rtl" title="مهندس DevOps" company="سينابس أناليتيكس" from="يوليو 2024" to="مايو 2026" location="هجين / القاهرة، مصر" %}}
 
 - عزّزت أمان 9 خدمات مصغّرة على Kubernetes باستخدام سياسات الشبكة (Network Policies) وسياقات أمان صارمة (Security Contexts)، مما حسّن العزل وقلّل مساحة الهجوم.
@@ -21,6 +27,10 @@ hideMeta: true
 - خفّضت أحجام صور حاويات تعلم الآلة الخاصة بـ Azkavision بنسبة 28.8% عبر نقل خطوط GitLab CI من Docker-in-Docker إلى Buildah والاستفادة من Dockerfiles متعددة المراحل.
 
 {{% /job %}}
+
+## {{< vcenterico fas graduation-cap  >}} التعليم
+
+{{% job dir="rtl" company="جامعة النيل" title="بكالوريوس علوم الحاسب" from="سبتمبر 2022" to="يونيو 2026" location="الجيزة، مصر" /%}}
 
 ## {{< vcenterico fas building >}} الشهادات
 

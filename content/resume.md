@@ -10,6 +10,12 @@ An engineer at heart with a passion for automation, cloud infrastructure, and sc
 
 ## {{< vcenterico fas building >}} Experiences
 
+{{% job title="DevOps Engineer" company="Thndr" from="May 2026" to="Present" location="Cairo, Egypt" %}}
+
+- Led migration of EGX staging environment from on-premise K3s/VMs to AWS, migrating 10 microservices and 7+ stateful components to EKS, EC2, RDS, and ElastiCache within 1 month.
+
+{{% /job %}}
+
 {{% job title="DevOps Engineer" company="Synapse Analytics" from="Jul 2024" to="May 2026" location="Hybrid / Cairo, Egypt" %}}
 
 - Hardened 9 Kubernetes microservices using network policies and strict security contexts, improving isolation and reducing attack surface.
@@ -21,6 +27,10 @@ An engineer at heart with a passion for automation, cloud infrastructure, and sc
 - Reduced Azkavision ML container image sizes by 28.8% by transitioning GitLab CI pipelines from Docker-in-Docker to Buildah and utilizing multi-stage Dockerfiles.
 
 {{% /job %}}
+
+## {{< vcenterico fas graduation-cap  >}} Education
+
+{{% job company="Nile University" title="B.Sc. in Computer Science" from="Sep 2022" to="Jun 2026" location="Giza, Egypt" /%}}
 
 ## {{< vcenterico fas certificate >}} Certificates
 
