@@ -12,6 +12,8 @@ An engineer at heart with a passion for automation, cloud infrastructure, and sc
 
 {{% job title="DevOps Engineer" company="Thndr" from="May 2026" to="Present" location="Cairo, Egypt" %}}
 
+- Designed and implemented a fine-grained AWS authentication solution for Outpost local clusters combining IAM Roles Anywhere, cert-manager, and SPIFFE, migrating 6 workloads from using node credentials to dedicated, least-privilege permissions.
+- Built Thndr Pay’s AWS Outposts EKS platform, integrating 12 infrastructure components through GitOps to establish the foundation for PCI readiness.
 - Led migration of EGX staging environment from on-premise K3s/VMs to AWS, migrating 10 microservices and 7+ stateful components to EKS, EC2, RDS, and ElastiCache within 1 month.
 
 {{% /job %}}
