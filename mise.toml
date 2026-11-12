@@ -4,13 +4,13 @@ lockfile = true
 
 [tools]
 # NOTE: Hugo
-go = "1.23"
-hugo = "0.160"
+go = "1.27"
+hugo = "0.169"
 # NOTE: Linters and formatters
-oxfmt = "0.44"
-tombi = "0.9"
+oxfmt = "0.78"
+tombi = "1"
 # NOTE: Utils
-prek = "0.3"
+prek = "0.5"
 
 [tasks.install]
 description = "Install all dependencies"
