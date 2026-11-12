@@ -1,6 +1,6 @@
-baseURL: "https://0xzer0x.github.io"
-languageCode: "en-us"
-title: "Youssef Fathy"
+baseURL: https://0xzer0x.github.io
+locale: en-us
+title: Youssef Fathy
 theme: PaperMod
 
 enableInlineShortcodes: true

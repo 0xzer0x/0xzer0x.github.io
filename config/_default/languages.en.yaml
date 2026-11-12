@@ -1,4 +1,5 @@
 label: EN
+locale: en
 weight: 1
 taxonomies:
   project: projects
