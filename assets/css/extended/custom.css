@@ -1,6 +1,7 @@
 @font-face {
   font-family: "SF Arabic";
-  src: url("/fonts/sf-arabic/SFArabic-Regular.ttf") format("truetype");
+  src: url("/fonts/sf-arabic/SFArabic-Regular.woff2") format("woff2");
+  font-display: swap;
 }
 
 body {
@@ -31,23 +32,17 @@ body {
 }
 
 .job-left {
-  text-align: left;
+  text-align: start;
   flex: 3;
 }
 
 .job-right {
-  text-align: right;
+  text-align: end;
   flex: 1;
 }
 
-.job-left-rtl {
-  text-align: right;
+[dir="rtl"] .job-left {
   flex: 2;
-}
-
-.job-right-rtl {
-  text-align: left;
-  flex: 1;
 }
 
 .fa-centered {

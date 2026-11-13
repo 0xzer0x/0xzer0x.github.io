@@ -10,7 +10,7 @@ hideMeta: true
 
 ## {{< vcenterico fas building >}} الخبرات
 
-{{% job dir="rtl" title="مهندس DevOps" company="ثاندر" from="مايو 2026" to="الآن" location="القاهرة، مصر" %}}
+{{% job title="مهندس DevOps" company="ثاندر" from="مايو 2026" to="الآن" location="القاهرة، مصر" %}}
 
 - صمّمت ونفّذت حلًا للمصادقة مع AWS بصلاحيات دقيقة لعناقيد Outposts المحلية، يجمع بين IAM Roles Anywhere وcert-manager وSPIFFE، ونقلت 6 أحمال عمل من استخدام بيانات اعتماد العُقد إلى صلاحيات مخصّصة وفق مبدأ الحد الأدنى من الامتيازات.
 - أنشأت منصة EKS على AWS Outposts لخدمة Thndr Pay، ودمجت 12 مكوّنًا للبنية التحتية عبر GitOps، لإرساء الأساس للجاهزية للامتثال لمعيار PCI.
@@ -18,7 +18,7 @@ hideMeta: true
 
 {{% /job %}}
 
-{{% job dir="rtl" title="مهندس DevOps" company="سينابس أناليتيكس" from="يوليو 2024" to="مايو 2026" location="هجين / القاهرة، مصر" %}}
+{{% job title="مهندس DevOps" company="سينابس أناليتيكس" from="يوليو 2024" to="مايو 2026" location="هجين / القاهرة، مصر" %}}
 
 - عزّزت أمان 9 خدمات مصغّرة على Kubernetes باستخدام سياسات الشبكة (Network Policies) وسياقات أمان صارمة (Security Contexts)، مما حسّن العزل وقلّل مساحة الهجوم.
 - أدرت EKS cluster يستضيف GitLab لأكثر من 30 مهندسًا عبر عدة أقسام، مع ضمان الاستقرار، وتنفيذ التحديثات، ومعالجة المشكلات التشغيلية.
@@ -32,7 +32,7 @@ hideMeta: true
 
 ## {{< vcenterico fas graduation-cap  >}} التعليم
 
-{{% job dir="rtl" company="جامعة النيل" title="بكالوريوس علوم الحاسب" from="سبتمبر 2022" to="يونيو 2026" location="الجيزة، مصر" /%}}
+{{% job company="جامعة النيل" title="بكالوريوس علوم الحاسب" from="سبتمبر 2022" to="يونيو 2026" location="الجيزة، مصر" /%}}
 
 ## {{< vcenterico fas building >}} الشهادات
 

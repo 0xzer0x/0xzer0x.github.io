@@ -1,0 +1,30 @@
+/* Material light: https://m2.material.io/design/color/the-color-system.html */
+:root {
+  --theme: #fafafa; /* grey 50 */
+  --entry: #ffffff; /* surface */
+  --primary: #212121; /* high emphasis, 87% black */
+  --secondary: #666666; /* medium emphasis, 60% black */
+  --tertiary: #e0e0e0; /* grey 300 */
+  --content: #212121;
+  --code-block-bg: #212121; /* grey 900, matches the dark chroma style */
+  --code-bg: #f5f5f5; /* grey 100 */
+  --border: #e0e0e0; /* divider, 12% black */
+  --tertiary-bg: var(--entry);
+  --admonition-info-bg: #e3f2fd; /* blue 50 */
+  --admonition-info-border: #90caf9; /* blue 200 */
+}
+
+/* Material dark: https://m2.material.io/design/color/dark-theme.html */
+:root[data-theme="dark"] {
+  --theme: #121212; /* background */
+  --entry: #1e1e1e; /* surface 1dp */
+  --primary: #e0e0e0; /* high emphasis, 87% white */
+  --secondary: #a0a0a0; /* medium emphasis, 60% white */
+  --tertiary: #353535; /* surface 16dp */
+  --content: #d0d0d0;
+  --code-block-bg: #1e1e1e; /* surface 1dp */
+  --code-bg: #2c2c2c; /* surface 6dp */
+  --border: #2c2c2c; /* surface 6dp */
+  --admonition-info-bg: #21282e; /* blue 200 at 12% over background */
+  --admonition-info-border: #445c6e; /* blue 200 at 40% over background */
+}

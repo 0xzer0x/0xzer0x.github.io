@@ -20,7 +20,7 @@ profileMode:
   enabled: true
   title: Youssef Fathy
   subtitle: DevOps Engineer
-  imageUrl: imgs/me.png
+  imageUrl: imgs/me.webp
   imageTitle: me
 
 socialIcons:
@@ -51,3 +51,6 @@ ShareButtons:
   - whatsapp
   - linkedin
   - telegram
+
+assets:
+  theme_color: "#121212"

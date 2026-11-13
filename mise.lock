@@ -88,6 +88,9 @@ aube = { path = ".mise/locks/oxfmt/0.78.0", digest = "sha256:0da2508ef998e667c28
 backend = "npm:oxfmt"
 specifiers = ["0.78"]
 
+[tools.oxfmt.provenance]
+repository = "github.com/oxc-project/oxc"
+
 [[tools.prek]]
 version = "0.5.3"
 backend = "aqua:j178/prek"

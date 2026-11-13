@@ -1,12 +1,12 @@
 <div class="job">
-  <div class="job-left{{ if eq (.Get "dir") "rtl"}}-rtl{{ end }}">
+  <div class="job-left">
     {{- if .Get "company" -}}
       <b class="job-company">{{- .Get "company" -}}</b></br>
     {{- end -}}
     <span class="job-title"><i>{{- .Get "title" -}}</i></span>
     {{- .Inner -}}
   </div>
-  <div class="job-right{{ if eq (.Get "dir") "rtl"}}-rtl{{ end }}">
+  <div class="job-right">
     {{- if .Get "location" -}}
       {{- .Get "location" -}}</br>
     {{- end -}}
