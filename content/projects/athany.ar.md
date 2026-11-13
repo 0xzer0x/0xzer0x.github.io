@@ -23,7 +23,8 @@ cover:
 
 ### {{< vcenterico fab windows >}} **ويندوز**
 
-قم بتنزيل المثبت عبر الإنترنت واتبع خطوات التثبيت.  
+قم بتنزيل المثبت عبر الإنترنت واتبع خطوات التثبيت.
+
 [المثبت ←](https://github.com/0xzer0x/quran-companion/releases/download/v1.1.9/qc_online_installer_x64_win.exe)
 
 </div>
@@ -31,7 +32,8 @@ cover:
 
 ### {{< vcenterico fab python >}} **بايثون**
 
-قم بتنزيل الشيفرة المصدرية، ثم قم بتثبيت المتطلبات باستخدام `pip`، وتشغيل التطبيق من المصدر.<br/>
+قم بتنزيل الشيفرة المصدرية، ثم قم بتثبيت المتطلبات باستخدام `pip`، وتشغيل التطبيق من المصدر.
+
 [التعليمات ←](https://github.com/0xzer0x/athany?tab=readme-ov-file#installation)<br/>
 [المصدر ←](https://github.com/0xzer0x/athany/archive/refs/tags/1.2.1-stable.zip)
 

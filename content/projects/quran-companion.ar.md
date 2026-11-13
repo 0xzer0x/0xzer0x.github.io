@@ -23,7 +23,8 @@ cover:
 
 ### {{< vcenterico fab windows >}} **ويندوز**
 
-قم بتنزيل المثبت واتبع خطوات التثبيت.<br/>
+قم بتنزيل المثبت واتبع خطوات التثبيت.
+
 [المثبت ←](https://github.com/0xzer0x/quran-companion/releases/latest)
 
 </div>
@@ -33,6 +34,7 @@ cover:
 ### {{< vcenterico fab linux >}} **لينكس**
 
 قم بتنزيل التطبيق بأي من الحزم المتاحة.
+
 [AppImage ←](https://github.com/0xzer0x/quran-companion/releases/latest)<br/>
 [Flatpak ←](https://flathub.org/apps/io.github._0xzer0x.qurancompanion)<br/>
 [Snap ←](https://snapcraft.io/quran-companion)<br/>
@@ -44,7 +46,8 @@ cover:
 
 ### {{< vcenterico fab apple >}} **ماك**
 
-قم بتنزيل وفتح ملف dmg الخاص بالتطبيق واسحب التطبيق إلى مجلد التطبيقات _Applications_.<br/>
+قم بتنزيل وفتح ملف dmg الخاص بالتطبيق واسحب التطبيق إلى مجلد التطبيقات _Applications_.
+
 [DMG ←](https://github.com/0xzer0x/quran-companion/releases/latest)
 
 </div>
@@ -53,7 +56,8 @@ cover:
 
 ### {{< vcenterico fas screwdriver-wrench >}} **البناء من المصدر**
 
-اتبع تعليمات البناء على مستودع المشروع.  
+اتبع تعليمات البناء على مستودع المشروع.
+
 [تعليمات البناء ←](https://github.com/0xzer0x/quran-companion?tab=readme-ov-file#compilation-%EF%B8%8F)
 
 </div>

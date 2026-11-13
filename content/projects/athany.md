@@ -23,7 +23,8 @@ cover:
 
 ### {{< vcenterico fab windows >}} **Windows**
 
-Download the online installer and follow the installation steps.  
+Download the online installer and follow the installation steps.
+
 [Installer →](https://github.com/0xzer0x/quran-companion/releases/download/v1.1.9/qc_online_installer_x64_win.exe)
 
 </div>
@@ -31,7 +32,8 @@ Download the online installer and follow the installation steps.
 
 ### {{< vcenterico fab python >}} **Python**
 
-Download the source code, install the requirements using `pip`, and run the app from source.<br/>
+Download the source code, install the requirements using `pip`, and run the app from source.
+
 [Instructions →](https://github.com/0xzer0x/athany?tab=readme-ov-file#installation)<br/>
 [Source →](https://github.com/0xzer0x/athany/archive/refs/tags/1.2.1-stable.zip)
 

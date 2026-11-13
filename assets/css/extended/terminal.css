@@ -1,0 +1,242 @@
+/* Terminal look on top of PaperMod: tmux status bar header, shell command breadcrumbs, monospace type */
+
+:root {
+  --term-green: #2e7d32; /* green 800 */
+  --term-blue: #1565c0; /* blue 800 */
+  --term-bar: #e0e0e0; /* grey 300 */
+  --term-pane: #bdbdbd; /* grey 400 */
+}
+
+:root[data-theme="dark"] {
+  --term-green: #a5d6a7; /* green 200 */
+  --term-blue: #90caf9; /* blue 200 */
+  --term-bar: #1e1e1e; /* surface 1dp */
+  --term-pane: #424242; /* grey 800 */
+}
+
+/* Plex Mono has no Arabic glyphs, so Arabic text falls through to Plex Sans Arabic */
+body,
+code,
+pre,
+kbd,
+.post-content code {
+  font-family: "IBM Plex Mono", "IBM Plex Sans Arabic", "SF Arabic", ui-monospace, monospace;
+}
+
+body {
+  font-size: 16px;
+}
+
+.post-title,
+.entry-hint-parent,
+.first-entry .entry-header h1,
+.page-header h1,
+.profile_inner h1 {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.post-content h1 {
+  font-size: 28px;
+}
+
+.post-content h2 {
+  font-size: 24px;
+}
+
+.post-content h3 {
+  font-size: 20px;
+}
+
+/* Header: tmux status bar. Session name, numbered windows, status on the far end */
+.header {
+  background: var(--term-bar);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-nav {
+  max-width: none;
+  padding: 0;
+  column-gap: 0;
+  flex-wrap: nowrap;
+  line-height: 2.25rem;
+  font-size: 15px;
+}
+
+.logo {
+  display: contents;
+}
+
+.logo > a {
+  order: 0;
+  column-gap: 0;
+  flex-shrink: 0;
+  padding: 0 1ch;
+  font-size: 15px;
+  font-weight: 600;
+  background: var(--term-green);
+  color: var(--theme);
+}
+
+.logo > a::before {
+  content: "[";
+}
+
+.logo > a::after {
+  content: "]";
+}
+
+#menu {
+  order: 1;
+  flex: 1 1 auto;
+  min-width: 0;
+  column-gap: 0;
+  counter-reset: window;
+}
+
+#menu li {
+  counter-increment: window;
+}
+
+#menu a {
+  padding: 0 1ch;
+  font-size: 15px;
+}
+
+#menu a span::before {
+  content: counter(window) ":";
+}
+
+#menu .active {
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+#menu .active::after {
+  content: "*";
+}
+
+#menu a:has(.active) {
+  background: var(--term-blue);
+  color: var(--theme);
+}
+
+.logo-switches {
+  order: 2;
+  flex-shrink: 0;
+  padding-inline-end: 1ch;
+}
+
+.lang-menu a {
+  font-size: 15px;
+}
+
+/* Breadcrumbs: shell command, so the title below reads as its output */
+.command {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+
+.command a {
+  font-size: inherit;
+  color: var(--term-blue);
+}
+
+.command-prompt {
+  color: var(--term-green);
+  font-weight: 600;
+}
+
+.command-name {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Install cards (.grid-item in content/projects): tmux panes with the title on the top border */
+.grid-container {
+  row-gap: 1.75rem;
+}
+
+.md-content .grid-item {
+  position: relative;
+  padding: 1.25rem 2ch 1rem;
+  border: 1px solid var(--term-pane);
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  text-align: start;
+}
+
+.md-content .grid-item:hover,
+.md-content .grid-item:focus-within {
+  border-color: var(--term-green);
+}
+
+.md-content .grid-item h3 {
+  position: absolute;
+  top: 0;
+  inset-inline-start: 1ch;
+  translate: 0 -50%;
+  margin: 0;
+  padding: 0 1ch;
+  background: var(--theme);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.md-content .grid-item:hover h3,
+.md-content .grid-item:focus-within h3 {
+  color: var(--term-green);
+}
+
+.md-content .grid-item p {
+  margin: 0 0 0.75rem;
+}
+
+.md-content .grid-item > :last-child {
+  margin-bottom: 0;
+}
+
+.md-content .grid-item a {
+  border-bottom: none;
+  box-shadow: none;
+  color: var(--term-blue);
+  text-decoration: none;
+}
+
+.md-content .grid-item a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+/* Home: blinking block cursor after the subtitle */
+.profile_inner > span::after {
+  content: "";
+  display: inline-block;
+  width: 0.6em;
+  height: 1.1em;
+  margin-inline-start: 0.4ch;
+  vertical-align: text-bottom;
+  background: currentColor;
+  animation: cursor-blink 1.1s steps(1) infinite;
+}
+
+@keyframes cursor-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .profile_inner > span::after {
+    animation: none;
+  }
+}
+
+/* Squarer corners, like terminal panes */
+:root {
+  --radius: 2px;
+}

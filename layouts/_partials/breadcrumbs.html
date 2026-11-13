@@ -1,0 +1,23 @@
+{{- /* Shell command in place of PaperMod's breadcrumbs: $ cat ~/blog/post.md, $ ls ~/blog/ */ -}}
+{{- if (.Param "ShowBreadCrumbs") -}}
+<nav class="breadcrumbs command" aria-label="Breadcrumb">
+  <span dir="ltr">
+    <span class="command-prompt" aria-hidden="true">$</span>
+    <span class="command-name" aria-hidden="true">{{ cond .IsPage "cat" "ls" }}</span>
+    <span class="command-path">
+      {{- range $i, $bc := .Ancestors.Reverse -}}
+        {{- if eq $i 0 -}}
+          <a href="{{ $bc.RelPermalink }}" title="{{ i18n "home" | default "Home" }}">~</a>
+        {{- else -}}
+          <a href="{{ $bc.RelPermalink }}" title="{{ $bc.Title }}">{{ path.Base (strings.TrimSuffix "/" (urls.Parse $bc.RelPermalink).Path) }}</a>
+        {{- end -}}
+        /
+      {{- end -}}
+      {{- $name := path.Base (strings.TrimSuffix "/" (urls.Parse .RelPermalink).Path) -}}
+      <span title="{{ .Title }}" aria-current="page">
+        {{- if and .IsPage .File }}{{ $name }}.{{ .File.Ext }}{{ else }}{{ $name }}/{{ end -}}
+      </span>
+    </span>
+  </span>
+</nav>
+{{- end -}}

@@ -5,7 +5,6 @@ mainSections:
   - projects
 
 defaultTheme: auto
-ShowShareButtons: true
 ShowReadingTime: true
 displayFullLangName: true
 ShowPostNavLinks: true
@@ -45,12 +44,7 @@ editPost:
   URL: https://github.com/0xzer0x/0xzer0x.github.io/tree/main/content
   appendFilePath: true
 
-ShareButtons:
-  - x
-  - facebook
-  - whatsapp
-  - linkedin
-  - telegram
-
 assets:
   theme_color: "#121212"
+
+hideFooter: true
