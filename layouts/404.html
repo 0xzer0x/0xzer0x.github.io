@@ -1,0 +1,11 @@
+{{- /* 404 as a failed shell command, in place of PaperMod's large "404" */ -}}
+{{- define "main" }}
+<div class="not-found-term" dir="ltr">
+  <p><span class="command-prompt">$</span> <span class="command-name">cd</span> <span id="not-found-path">~/missing-page</span></p>
+  <p class="command-error">bash: cd: No such file or directory (404)</p>
+  <p><span class="command-prompt">$</span> <span class="command-name">cd</span> <a href="{{ "" | absLangURL }}">~</a></p>
+</div>
+<script>
+  document.getElementById("not-found-path").textContent = "~" + decodeURIComponent(location.pathname);
+</script>
+{{- end }}{{/* end main */ -}}

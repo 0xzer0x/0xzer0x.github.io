@@ -1,10 +1,9 @@
 ---
-weight: 1
 title: رفيق القرآن
 summary: قارئ ومشغل قرآن مجاني ومفتوح المصدر لسطح المكتب
 description: قارئ ومشغل قرآن مجاني ومفتوح المصدر لسطح المكتب
-date: 2024-08-16
-images: imgs/quran-companion/social.png
+date: 2023-03-19
+images: imgs/quran-companion/social.webp
 ShowReadingTime: false
 hideMeta: true
 ShowToc: false
@@ -13,7 +12,7 @@ tags:
   - برمجيات
   - سي بلس بلس
 cover:
-  image: imgs/quran-companion/banner.png
+  image: imgs/quran-companion/banner.webp
 ---
 
 # {{< vcenterico fas download >}} التثبيت
@@ -90,11 +89,11 @@ cover:
 
 # <i>{{< vcenterico fas camera >}}</i> لقطات شاشة
 
-![ar_light.png](/imgs/quran-companion/screenshots/ar_light.png#center)
-![ar_dark.png](/imgs/quran-companion/screenshots/ar_dark.png#center)
-![light.png](/imgs/quran-companion/screenshots/light.png#center)
-![two-pages.png](/imgs/quran-companion/screenshots/two-pages.png#center)
-![dark.png](/imgs/quran-companion/screenshots/dark.png#center)
+![ar_light.png](/imgs/quran-companion/screenshots/ar_light.webp#center)
+![ar_dark.png](/imgs/quran-companion/screenshots/ar_dark.webp#center)
+![light.png](/imgs/quran-companion/screenshots/light.webp#center)
+![two-pages.png](/imgs/quran-companion/screenshots/two-pages.webp#center)
+![dark.png](/imgs/quran-companion/screenshots/dark.webp#center)
 
 # {{< vcenterico fas code >}} الشيفرة المصدرية
 

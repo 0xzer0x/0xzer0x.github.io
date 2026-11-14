@@ -1,8 +1,9 @@
 ---
 title: Tracking prayer times in tiling window managers
-summary: Install and configure a prayer times module for your tiling window manager, including status bar and notifications
-description: Install and configure a prayer times module for your tiling window manager, including status bar and notifications
+summary: Install and configure go-pray to show prayer times in your status bar and get notified at prayer time
+description: Install and configure go-pray to show prayer times in your status bar and get notified at prayer time
 date: 2024-09-03
+lastmod: 2026-11-14
 ShowReadingTime: false
 hideMeta: true
 ShowToc: true
@@ -10,8 +11,7 @@ ShowPostNavLinks: false
 tags:
   - linux
   - window manager
-  - scripting
-  - bash
+  - go
 images: imgs/blogs/statusbar-prayer-times.png
 cover:
   image: imgs/blogs/statusbar-prayer-times.png
@@ -20,151 +20,180 @@ cover:
 ## Introduction
 
 One of the key benefits of using tiling window managers is the ability to
-easily extend functionality through custom Bash scripts. Embracing this
-flexibility, I created a Bash script specifically designed to track prayer
-times. This script integrates with various status bars and notification
-daemons, offering a streamlined way to stay informed about prayer times
-directly from your desktop environment.
+easily extend them with small command line tools. [go-pray](/projects/go-pray/)
+is a prayer times CLI that fits right into this workflow: it prints the next
+prayer for your status bar, shows the prayer calendar for any date, and runs as
+a daemon that sends a desktop notification and plays the athan at prayer time.
 
-## Quick Start
+{{< info >}}
+This post previously used the [`prayer-times`](https://github.com/0xzer0x/prayer-times)
+Bash script. go-pray replaces it with a single binary, so it no longer needs
+`at`, `yad`, `mpv`, `curl`, or a Systemd unit.
+{{< /info >}}
 
-To quickly install the prayer times script, follow these steps:
+## Installation
 
-1. Clone the repository:
-
-```sh
-git clone https://github.com/0xzer0x/prayer-times.git
-```
-
-2. Run the installation script:
+Install the latest release with a single command:
 
 ```sh
-cd prayer-times
-./install.sh
+curl -fsSLo - https://github.com/0xzer0x/go-pray/raw/refs/heads/main/install.sh | bash
 ```
 
-## Scripts
+The script installs the right package for your distro:
 
-### Prerequisites
+| Distro              | Install method  |
+| ------------------- | --------------- |
+| **Debian / Ubuntu** | `.deb` package  |
+| **Fedora / RHEL**   | `.rpm` package  |
+| **Alpine**          | `.apk` package  |
+| **Arch Linux**      | AUR             |
+| **Others**          | Generic tarball |
 
-Before using the script, you need to have the following dependencies installed on your system:
+On other distros, it falls back to the generic tarball and installs `go-pray` to `./bin`.
+Move the binary to a directory in your `PATH`.
 
-- `jq`
-- `at`
-- `yad`
-- `mpv`
-- `curl`
-- `dunst` (for X11)
-- `polybar` (for X11)
-- `mako` (for Wayland)
-- `waybar` (for Wayland)
-- [Nerd Font](https://www.nerdfonts.com/) (recommended)
+To install a specific version, set `INSTALL_VERSION` (not supported on Arch Linux):
 
-#### Ubuntu
-
-```bash
-sudo apt install jq at yad mpv curl dunst polybar mako waybar
+```sh
+curl -sLo - https://github.com/0xzer0x/go-pray/raw/refs/heads/main/install.sh \
+| env INSTALL_VERSION=0.1.3 bash
 ```
 
-#### Fedora
+### Nix
 
-```bash
-sudo dnf install jq at yad mpv curl dunst polybar mako waybar
+If you use [Nix](https://nixos.org), add the package from the project's flake to your user profile:
+
+```sh
+nix profile add github:0xzer0x/go-pray
 ```
 
-#### Arch
+For NixOS and the Home Manager module, see the
+[installation wiki page](https://github.com/0xzer0x/go-pray/wiki/Installation#nix).
 
-```bash
-sudo pacman -S jq at yad mpv curl dunst polybar mako waybar
+## Configuration
+
+go-pray reads a `config.yml` file from the first of these locations that exists:
+
+1. `$XDG_CONFIG_HOME/go-pray`
+2. `$HOME/.config/go-pray`
+3. `$HOME/.go-pray`
+
+You can also pass a different file with `--config`. A minimal configuration needs
+your location and a calculation method:
+
+```yaml
+# ~/.config/go-pray/config.yml
+language: en
+timezone: Africa/Cairo
+
+location:
+  lat: 30.001780
+  long: 31.290419
+
+calculation:
+  # EGYPT, MWL, KARACHI, UAQ, DUBAI, ISNA, KUWAIT, QATAR, SINGAPORE, UOIF, or OTHER
+  method: EGYPT
+
+# Athan to play at prayer time (required for the daemon)
+adhan: $HOME/.local/share/qatami_takbeer.mp3
+
+notification:
+  icon: dialog-information
+  title: Prayer Times
+  body: It is time for {{ .CalendarName }} prayer!
 ```
 
-### Installation
+- Get your coordinates from [Map Coordinates](https://www.mapcoordinates.net/en).
+- `timezone` takes an [IANA time zone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List), and defaults to your local time zone.
+- Set `language: ar` for Arabic output. The notification text can be Arabic too:
 
-You need to copy the files from [`0xzer0x/prayer-times`](https://github.com/0xzer0x/prayer-times) to the following paths:
+```yaml
+language: ar
+notification:
+  title: "مواقيت الصلاة"
+  body: "حان الآن وقت صلاة {{ .CalendarName }}"
+```
 
-- `.local/bin`: `~/.local/bin`
-- `.local/share/qatami_takbeer.mp3`: `~/.local/share/qatami_takbeer.mp3`
-- `.config/systemd/user`: `~/.config/systemd/user`
+`CalendarName` is the current prayer's name, and says Jumuaa instead of Dhuhr on
+Fridays. For custom calculation parameters and time adjustments, see the
+[configuration wiki page](https://github.com/0xzer0x/go-pray/wiki/Configuration).
 
-### Configuration
+## Usage
 
-To configure the [`prayer-times`](https://github.com/0xzer0x/prayer-times/blob/main/.local/bin/prayer-times) script, you'll need to set the following parameters inside the script:
+Show the next prayer:
 
-- `lat`: latitude
-- `long`: longitude
-- `method`: calculation method
-- `print_lang`: language to print prayer times schedule in (`ar`/`en`)
-- `notify`: notification daemon (`mako`/`dunst`)
+```sh
+go-pray next
+```
 
-### Systemd Unit
+Show when a specific prayer comes next (`fajr`, `sunrise`, `dhuhr`, `asr`, `maghrib`, or `isha`):
 
-To sync the prayers calendar and create the `at` jobs automatically, you can
-activate one of the following Systemd services based on your preferences:
+```sh
+go-pray next fajr
+```
 
-- **On boot:** `systemctl --user enable --now prayer-times.service`
-- **On boot + every 8 hours:** `systemctl --user enable --now prayer-times.timer`
+Show the prayer calendar for today, or for any date as `YYYY-MM-DD`,
+`@yesterday`, or `@tomorrow`:
 
-## Bar Module
+```sh
+go-pray calendar
+go-pray calendar @tomorrow 2026-12-01
+```
 
-To add the next prayer to your statusbar, you will need to add a custom module to your bar's config.
+Use `--format` to choose between `short` (default), `table`, and `json` output.
 
-### Polybar
+## Notifications
 
-- Add the following to your [Polybar config](https://github.com/polybar/polybar/wiki/Configuration)
-- Modify colors according to your liking (replace `#83CAFA`)
+`go-pray daemon` sends a desktop notification and plays the athan at each prayer
+time. Start it from your window manager's autostart. For example, in your
+[Hyprland](https://wiki.hyprland.org/Configuring/) configuration:
 
 ```ini
-[module/prayers]
-type = custom/script
-exec = $HOME/.local/bin/prayer-times status
-interval = 60
-label = %{A:$HOME/.local/bin/prayer-times yad:}%{F#83CAFA}󱠧 %{F-} %output%%{A}
+exec-once = go-pray daemon
 ```
+
+## Status Bar
 
 ### Waybar
 
-- Add the following custom module to your [Waybar config](https://github.com/Alexays/Waybar/wiki/Configuration)
-- You can style the module using the class of the next prayer (e.g. `Asr`)
+Dependencies:
+
+- `jq`
+- [Nerd Font](https://www.nerdfonts.com/)
+
+Add the following script as `scripts/go-pray` in your
+[Waybar configuration directory](https://github.com/Alexays/Waybar/wiki/Configuration#config-file),
+and make it executable:
+
+```bash
+#!/usr/bin/env bash
+set -euo pipefail
+
+# WARN: make sure go-pray is in your PATH
+_text="$(go-pray next)"
+_calendar="$(go-pray calendar)"
+_class="$(cut -d' ' -f1 <<<"${_text}")"
+
+jq \
+  --null-input \
+  --unbuffered \
+  --compact-output \
+  --arg class "${_class}" \
+  --arg text "${_text}" \
+  --arg calendar "${_calendar}" \
+  '{ "text": "\($text)", "tooltip": "\($calendar)", "class": "\($class)" }'
+```
+
+Then add the module to your Waybar configuration:
 
 ```json
-"custom/prayers": {
+"custom/go-pray": {
   "interval": 60,
   "return-type": "json",
-  "exec": "$HOME/.local/bin/prayer-times waybar",
-  "on-click": "$HOME/.local/bin/prayer-times yad",
+  "exec": "$HOME/.config/waybar/scripts/go-pray",
   "format": "󱠧  {}",
 }
 ```
 
-## Athan Notification
-
-### Dunst
-
-- Add the following rule to your dunstrc file (`~/.config/dunst/dunstrc`)
-
-```ini
-[play_athan]
-summary = "Prayer Times"
-script = "$HOME/.local/bin/toggle-athan"
-```
-
-### Mako
-
-- Add the following criteria/rule to mako config (`~/.config/mako/config`)
-
-```ini
-[summary="Prayer Times"]
-on-notify=exec $HOME/.local/bin/toggle-athan
-on-button-left=exec $HOME/.local/bin/toggle-athan
-```
-
-## Prayer Times Window
-
-- Window Title: `Prayers`
-- Configure your window manager to show the Yad window in floating mode and you're all set!
-- Example window rule for [Hyprland](https://hyprland.org/)
-
-```ini
-windowrulev2 = float,class:(yad)
-windowrulev2 = move cursor -50% 30,title:(Prayers)
-```
+The module shows the next prayer, and its tooltip shows today's calendar. You can
+style it in your Waybar CSS using the class of the next prayer (e.g. `Asr`).

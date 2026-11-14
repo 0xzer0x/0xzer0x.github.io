@@ -1,8 +1,9 @@
 ---
 title: تتبع أوقات الصلاة في مديري النوافذ
-summary: تثبيت وتهيئة وحدة مواقيت الصلاة في مدير النوافذ الخاص بك، بما في ذلك شريط الحالة والإشعارات
-description: تثبيت وتهيئة وحدة مواقيت الصلاة في مدير النوافذ الخاص بك، بما في ذلك شريط الحالة والإشعارات
+summary: تثبيت وتهيئة go-pray لعرض مواقيت الصلاة في شريط الحالة وتلقي الإشعارات عند دخول وقت الصلاة
+description: تثبيت وتهيئة go-pray لعرض مواقيت الصلاة في شريط الحالة وتلقي الإشعارات عند دخول وقت الصلاة
 date: 2024-09-03
+lastmod: 2026-11-14
 ShowReadingTime: false
 hideMeta: true
 ShowToc: true
@@ -10,8 +11,7 @@ ShowPostNavLinks: false
 tags:
   - لينكس
   - مدير النوافذ
-  - سكريبتات
-  - باش
+  - جو
 images: imgs/blogs/statusbar-prayer-times.png
 cover:
   image: imgs/blogs/statusbar-prayer-times.png
@@ -20,153 +20,173 @@ cover:
 ## مقدمة
 
 أحد الفوائد الرئيسية لاستخدام مديري النوافذ هي القدرة على إضافة الوظائف بسهولة
-عبر سكريبتات باش. ومن خلال الاستفادة من هذه المرونة، قمت بإنشاء سكريبت باش مصمم
-خصيصًا لتتبع أوقات الصلاة. يتكامل هذا السكريبت مع مختلف أشرطة الحالة ووحدات
-الإشعارات، مما يوفر طريقة مبسطة للبقاء على علم بأوقات الصلاة مباشرةً من بيئة سطح
-المكتب.
+عبر أدوات سطر الأوامر الصغيرة. [go-pray](/ar/projects/go-pray/) أداة سطر أوامر
+لمواقيت الصلاة تناسب هذا الأسلوب: فهي تعرض الصلاة القادمة في شريط الحالة، وتعرض
+تقويم الصلاة لأي تاريخ، وتعمل كخدمة في الخلفية ترسل إشعارًا وتشغّل الأذان عند دخول
+وقت الصلاة.
 
-## البداية السريعة
+{{< info >}}
+كانت هذه التدوينة تستخدم سابقًا سكريبت باش [`prayer-times`](https://github.com/0xzer0x/prayer-times).
+يحل go-pray محله كملف تنفيذي واحد، فلم يعد يحتاج إلى `at` أو `yad` أو `mpv` أو `curl`
+أو وحدة Systemd.
+{{< /info >}}
 
-لتثبيت سكريبت مواقيت الصلاة بسرعة، اتبع هذه الخطوات:
+## التثبيت
 
-1. استنساخ المستودع:
-
-```sh
-git clone https://github.com/0xzer0x/prayer-times.git
-```
-
-2. تشغيل سكريبت التثبيت:
+ثبّت أحدث إصدار بأمر واحد:
 
 ```sh
-cd prayer-times
-./install.sh
+curl -fsSLo - https://github.com/0xzer0x/go-pray/raw/refs/heads/main/install.sh | bash
 ```
 
-## السكريبتات
+يثبّت السكريبت الحزمة المناسبة لتوزيعتك:
 
-### المتطلبات الأساسية
+| التوزيعة            | طريقة التثبيت |
+| ------------------- | ------------- |
+| **Debian / Ubuntu** | حزمة `.deb`   |
+| **Fedora / RHEL**   | حزمة `.rpm`   |
+| **Alpine**          | حزمة `.apk`   |
+| **Arch Linux**      | AUR           |
+| **غير ذلك**         | أرشيف عام     |
 
-قبل استخدام السكريبت، تأكد من تثبيت المتطلبات التالية على نظامك:
+في التوزيعات الأخرى، يلجأ السكريبت إلى الأرشيف العام ويثبّت `go-pray` في `./bin`.
+انقل الملف التنفيذي إلى مجلد ضمن `PATH`.
 
-- `jq`
-- `at`
-- `yad`
-- `mpv`
-- `curl`
-- `dunst` (لـ X11)
-- `polybar` (لـ X11)
-- `mako` (لـ Wayland)
-- `waybar` (لـ Wayland)
-- [Nerd Font](https://www.nerdfonts.com/) (موصى به)
+لتثبيت إصدار محدد، اضبط `INSTALL_VERSION` (غير مدعوم في Arch Linux):
 
-#### أوبونتو
-
-```bash
-sudo apt install jq at yad mpv curl dunst polybar mako waybar
+```sh
+curl -sLo - https://github.com/0xzer0x/go-pray/raw/refs/heads/main/install.sh \
+| env INSTALL_VERSION=0.1.3 bash
 ```
 
-#### فيدورا
+### Nix
 
-```bash
-sudo dnf install jq at yad mpv curl dunst polybar mako waybar
+إذا كنت تستخدم [Nix](https://nixos.org)، أضف الحزمة من Flake المشروع إلى ملفك الشخصي:
+
+```sh
+nix profile add github:0xzer0x/go-pray
 ```
 
-#### آرتش
+لإعداد NixOS ووحدة Home Manager، راجع
+[صفحة التثبيت في الويكي](https://github.com/0xzer0x/go-pray/wiki/Installation#nix).
 
-```bash
-sudo pacman -S jq at yad mpv curl dunst polybar mako waybar
+## التهيئة
+
+يقرأ go-pray ملف `config.yml` من أول مسار موجود من المسارات التالية:
+
+1. `$XDG_CONFIG_HOME/go-pray`
+2. `$HOME/.config/go-pray`
+3. `$HOME/.go-pray`
+
+ويمكنك تحديد ملف آخر باستخدام `--config`. تحتاج التهيئة الأساسية إلى موقعك وطريقة
+الحساب:
+
+```yaml
+# ~/.config/go-pray/config.yml
+language: ar
+timezone: Africa/Cairo
+
+location:
+  lat: 30.001780
+  long: 31.290419
+
+calculation:
+  # EGYPT, MWL, KARACHI, UAQ, DUBAI, ISNA, KUWAIT, QATAR, SINGAPORE, UOIF, or OTHER
+  method: EGYPT
+
+# Athan to play at prayer time (required for the daemon)
+adhan: $HOME/.local/share/qatami_takbeer.mp3
+
+notification:
+  icon: dialog-information
+  title: "مواقيت الصلاة"
+  body: "حان الآن وقت صلاة {{ .CalendarName }}"
 ```
 
-### التثبيت
+- احصل على إحداثياتك من [Map Coordinates](https://www.mapcoordinates.net/en).
+- يقبل `timezone` [منطقة زمنية بصيغة IANA](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List)، والقيمة الافتراضية هي منطقتك الزمنية المحلية.
+- `language` تحدد لغة المخرجات: `ar` للعربية أو `en` للإنجليزية (الافتراضية).
 
-يجب عليك نسخ الملفات من [`0xzer0x/prayer-times`](https://github.com/0xzer0x/prayer-times) إلى المسارات التالية:
+`CalendarName` هو اسم الصلاة الحالية، ويصبح الجمعة بدلًا من الظهر يوم الجمعة. لمعاملات
+الحساب المخصصة وتعديل المواقيت، راجع
+[صفحة التهيئة في الويكي](https://github.com/0xzer0x/go-pray/wiki/Configuration).
 
-{{< ltr >}}
+## الاستخدام
 
-- `.local/bin`: `~/.local/bin`
-- `.local/share/qatami_takbeer.mp3`: `~/.local/share/qatami_takbeer.mp3`
-- `.config/systemd/user`: `~/.config/systemd/user`
+عرض الصلاة القادمة:
 
-{{< /ltr >}}
+```sh
+go-pray next
+```
 
-### التهيئة
+عرض الموعد القادم لصلاة محددة (`fajr` أو `sunrise` أو `dhuhr` أو `asr` أو `maghrib` أو `isha`):
 
-لاستخدام سكريبت [`prayer-times`](https://github.com/0xzer0x/prayer-times/blob/main/.local/bin/prayer-times)، يجب عليك تعيين المتغيرات التالية داخل السكريبت:
+```sh
+go-pray next fajr
+```
 
-- `lat`: خط العرض
-- `long`: خط الطول
-- `method`: طريقة الحساب
-- `print_lang`: اللغة لطباعة جدول أوقات الصلاة (`ar`/`en`)
-- `notify`: وحدة الإشعارات (`mako`/`dunst`)
+عرض تقويم الصلاة لليوم، أو لأي تاريخ بصيغة `YYYY-MM-DD` أو `@yesterday` أو `@tomorrow`:
 
-### وحدة Systemd
+```sh
+go-pray calendar
+go-pray calendar @tomorrow 2026-12-01
+```
 
-لمزامنة تقويم الصلاة وإنشاء وظائف `at` تلقائيًا، يمكنك تفعيل واحدة من وحدات Systemd التالية بناءً على تفضيلاتك:
+استخدم `--format` للاختيار بين المخرجات `short` (الافتراضية) و`table` و`json`.
 
-- **عند بدء التشغيل:** `systemctl --user enable --now prayer-times.service`
-- **عند بدء التشغيل + كل 8 ساعات:** `systemctl --user enable --now prayer-times.timer`
+## الإشعارات
 
-## وحدة شريط الحالة
-
-لإضافة الصلاة التالية إلى شريط الحالة الخاص بك، ستحتاج إلى إضافة وحدة مخصصة إلى تكوين شريط الحالة.
-
-### Polybar
-
-- أضف التالي إلى ملف [إعدادت polybar](https://github.com/polybar/polybar/wiki/Configuration)
-- قم بتعديل الألوان حسب تفضيلاتك (استبدل `#83CAFA`)
+يرسل `go-pray daemon` إشعارًا ويشغّل الأذان عند دخول وقت كل صلاة. شغّله ضمن أوامر
+بدء التشغيل في مدير النوافذ. على سبيل المثال، في إعدادات
+[Hyprland](https://wiki.hyprland.org/Configuring/):
 
 ```ini
-[module/prayers]
-type = custom/script
-exec = $HOME/.local/bin/prayer-times status
-interval = 60
-label = %{A:$HOME/.local/bin/prayer-times yad:}%{F#83CAFA}󱠧 %{F-} %output%%{A}
+exec-once = go-pray daemon
 ```
+
+## شريط الحالة
 
 ### Waybar
 
-- أضف الوحدة التالية إلى [إعدادات Waybar](https://github.com/Alexays/Waybar/wiki/Configuration)
-- يمكنك تعديل تنسيق الوحدة باستخدام فئة الصلاة التالية (مثل `Asr`)
+المتطلبات:
+
+- `jq`
+- [Nerd Font](https://www.nerdfonts.com/)
+
+أضف السكريبت التالي باسم `scripts/go-pray` في
+[مجلد إعدادات Waybar](https://github.com/Alexays/Waybar/wiki/Configuration#config-file)،
+واجعله قابلًا للتنفيذ:
+
+```bash
+#!/usr/bin/env bash
+set -euo pipefail
+
+# WARN: make sure go-pray is in your PATH
+_text="$(go-pray next)"
+_calendar="$(go-pray calendar)"
+_class="$(cut -d' ' -f1 <<<"${_text}")"
+
+jq \
+  --null-input \
+  --unbuffered \
+  --compact-output \
+  --arg class "${_class}" \
+  --arg text "${_text}" \
+  --arg calendar "${_calendar}" \
+  '{ "text": "\($text)", "tooltip": "\($calendar)", "class": "\($class)" }'
+```
+
+ثم أضف الوحدة إلى إعدادات Waybar:
 
 ```json
-"custom/prayers": {
-"interval": 60,
-"return-type": "json",
-"exec": "$HOME/.local/bin/prayer-times waybar",
-  "on-click": "$HOME/.local/bin/prayer-times yad",
-"format": "󱠧 {}",
+"custom/go-pray": {
+  "interval": 60,
+  "return-type": "json",
+  "exec": "$HOME/.config/waybar/scripts/go-pray",
+  "format": "󱠧  {}",
 }
 ```
 
-## إشعارات الأذان
-
-### Dunst
-
-- أضف القاعدة التالية إلى ملف `dunstrc` الخاص بك
-
-```ini
-[play_athan]
-summary = "Prayer Times"
-script = "$HOME/.local/bin/toggle-athan"
-```
-
-### Mako
-
-- أضف القاعدة التالية إلى إعدادات mako
-
-```ini
-[summary="Prayer Times"]
-on-notify=exec $HOME/.local/bin/toggle-athan
-on-button-left=exec $HOME/.local/bin/toggle-athan
-```
-
-## نافذة المواقيت
-
-- عنوان النافذة: `Prayers`
-- قم بتهيئة مدير النوافذ الخاص بك لعرض نافذة Yad في وضع الطفو وأنت جاهز!
-- مثال لقاعدة نافذة لـ [Hyprland](https://hyprland.org/)
-
-```ini
-windowrulev2 = float,class:(yad)
-windowrulev2 = move cursor -50% 30,title:(Prayers)
-```
+تعرض الوحدة الصلاة القادمة، ويعرض التلميح تقويم اليوم. يمكنك تنسيقها في ملف CSS
+الخاص بـ Waybar باستخدام اسم الصلاة القادمة كفئة (class)، وهو الاسم بلغة المخرجات
+المحددة في `language`.

@@ -155,7 +155,136 @@ body {
   font-weight: 600;
 }
 
-/* Install cards (.grid-item in content/projects): tmux panes with the title on the top border */
+/* One background everywhere: PaperMod gives list pages a grey one in light mode */
+[data-theme] .list {
+  background: var(--theme);
+}
+
+/* Links in page text: the same blue as the breadcrumb folders, underline kept */
+.md-content a:not(.anchor) {
+  color: var(--term-blue);
+  text-underline-offset: 0.2em;
+}
+
+/* Panes: anything boxed looks like a tmux pane, and turns green when active */
+.post-entry,
+[data-theme] details.toc,
+.paginav,
+.searchResults li,
+.md-content .grid-item {
+  background: none;
+  border: 1px solid var(--term-pane);
+  border-radius: 0;
+}
+
+.post-entry:hover,
+.post-entry:focus-within,
+[data-theme] details.toc:focus-within,
+[data-theme] details.toc:hover,
+.paginav a:hover,
+.searchResults li:hover,
+.searchResults li:focus-within,
+.md-content .grid-item:hover,
+.md-content .grid-item:focus-within {
+  border-color: var(--term-green);
+  transform: none;
+}
+
+.paginav a:hover {
+  background: none;
+  outline: 1px solid var(--term-green);
+  outline-offset: -1px;
+}
+
+details.toc summary {
+  border-radius: 0;
+}
+
+/* Next/previous links: no all-caps label */
+.paginav .title {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* Tags: #name in blue instead of grey pills */
+.post-tags a,
+.terms-tags a {
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: var(--term-blue);
+  line-height: inherit;
+}
+
+.post-tags a::before,
+.terms-tags a::before {
+  content: "#";
+  color: var(--secondary);
+}
+
+.post-tags a:hover,
+.terms-tags a:hover {
+  background: none;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  transform: none;
+}
+
+/* Post counts inline, as #bash (1) */
+.terms-tags sup {
+  vertical-align: baseline;
+  font-size: inherit;
+  color: var(--secondary);
+}
+
+.terms-tags strong {
+  font-weight: inherit;
+}
+
+/* PaperMod nests <sup><strong><sup>, so only the outer one gets brackets */
+.terms-tags a > sup::before {
+  content: "(";
+}
+
+.terms-tags a > sup::after {
+  content: ")";
+}
+
+/* Search: `/` prompt like searching in less or Vim.
+   The box also holds the results list, so the slash is placed over the field,
+   with a line height matching the field's (1.6em text + 2 x 6px padding) */
+.searchbox {
+  position: relative;
+}
+
+.searchbox::before {
+  content: "/";
+  position: absolute;
+  top: 1px;
+  inset-inline-start: 1ch;
+  line-height: calc(1.6em + 12px);
+  color: var(--term-green);
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.searchbox input {
+  padding-block: 6px;
+  padding-inline: 3ch 1ch;
+  line-height: 1.6;
+  border: 1px solid var(--term-pane);
+  border-radius: 0;
+  background: none;
+  font: inherit;
+}
+
+.searchbox input:focus {
+  border-color: var(--term-green);
+  outline: none;
+}
+
+/* Install cards (.grid-item in content/projects): title sits on the top border */
 .grid-container {
   row-gap: 1.75rem;
 }
@@ -163,16 +292,6 @@ body {
 .md-content .grid-item {
   position: relative;
   padding: 1.25rem 2ch 1rem;
-  border: 1px solid var(--term-pane);
-  border-radius: 0;
-  background: none;
-  box-shadow: none;
-  text-align: start;
-}
-
-.md-content .grid-item:hover,
-.md-content .grid-item:focus-within {
-  border-color: var(--term-green);
 }
 
 .md-content .grid-item h3 {
@@ -200,16 +319,27 @@ body {
   margin-bottom: 0;
 }
 
-.md-content .grid-item a {
-  border-bottom: none;
-  box-shadow: none;
-  color: var(--term-blue);
+.md-content .grid-item a:not(.anchor) {
   text-decoration: none;
 }
 
-.md-content .grid-item a:hover {
+.md-content .grid-item a:not(.anchor):hover {
   text-decoration: underline;
-  text-underline-offset: 0.2em;
+}
+
+/* 404: failed shell command (layouts/404.html) */
+.not-found-term {
+  margin-top: 3rem;
+  font-size: 15px;
+  line-height: 2;
+}
+
+.not-found-term .command-error {
+  color: var(--secondary);
+}
+
+.not-found-term a {
+  color: var(--term-blue);
 }
 
 /* Home: blinking block cursor after the subtitle */

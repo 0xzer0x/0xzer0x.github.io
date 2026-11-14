@@ -1,9 +1,8 @@
 ---
-weight: 2
 title: Athany
 summary: Accurate prayer times calculator and notifier
 description: Accurate prayer times calculator and notifier
-date: 2024-08-16
+date: 2022-11-18
 images: imgs/athany/social.jpg
 ShowReadingTime: false
 hideMeta: true

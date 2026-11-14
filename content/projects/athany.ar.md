@@ -1,9 +1,8 @@
 ---
-weight: 2
 title: أذاني
 summary: حاسبة دقيقة ومنبه لمواقيت الصلاة
 description: حاسبة دقيقة ومنبه لمواقيت الصلاة
-date: 2024-08-16
+date: 2022-11-18
 images: imgs/athany/social.jpg
 ShowReadingTime: false
 hideMeta: true

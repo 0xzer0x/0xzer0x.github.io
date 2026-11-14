@@ -1,10 +1,9 @@
 ---
-weight: 1
 title: Quran Companion
 summary: Free and open-source desktop Quran reader and player
 description: Free and open-source desktop Quran reader and player
-date: 2024-08-16
-images: imgs/quran-companion/social.png
+date: 2023-03-19
+images: imgs/quran-companion/social.webp
 ShowReadingTime: false
 hideMeta: true
 ShowToc: false
@@ -13,7 +12,7 @@ tags:
   - software
   - c++
 cover:
-  image: imgs/quran-companion/banner.png
+  image: imgs/quran-companion/banner.webp
 ---
 
 # {{< vcenterico fas download >}} Installation
@@ -90,11 +89,11 @@ Follow the build instructions on the project repository.
 
 # {{< vcenterico fas camera >}} Screenshots
 
-![light.png](/imgs/quran-companion/screenshots/light.png#center)
-![two-pages.png](/imgs/quran-companion/screenshots/two-pages.png#center)
-![dark.png](/imgs/quran-companion/screenshots/dark.png#center)
-![ar_light.png](/imgs/quran-companion/screenshots/ar_light.png#center)
-![ar_dark.png](/imgs/quran-companion/screenshots/ar_dark.png#center)
+![light.png](/imgs/quran-companion/screenshots/light.webp#center)
+![two-pages.png](/imgs/quran-companion/screenshots/two-pages.webp#center)
+![dark.png](/imgs/quran-companion/screenshots/dark.webp#center)
+![ar_light.png](/imgs/quran-companion/screenshots/ar_light.webp#center)
+![ar_dark.png](/imgs/quran-companion/screenshots/ar_dark.webp#center)
 
 # {{< vcenterico fas code >}} Source Code
 

@@ -19,13 +19,6 @@ body {
     sans-serif;
 }
 
-.full-width-table {
-  width: 100%;
-  table-layout: fixed;
-  border-collapse: collapse;
-  display: table;
-}
-
 .job {
   width: 100%;
   display: flex;
@@ -55,19 +48,9 @@ body {
   gap: 20px;
 }
 
-.grid-item {
-  padding: 10px;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow:
-    0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 6%);
-  background-color: var(--entry);
-  text-align: center;
-}
-
-.grid-item a {
-  box-shadow: 0 0;
-  text-decoration: none;
-  border-bottom: 1px solid;
+/* Inline code is always left to right, so Arabic text doesn't reorder its
+   punctuation ($HOME/.config showing as HOME/.config$) */
+[dir="rtl"] code {
+  direction: ltr;
+  unicode-bidi: isolate;
 }

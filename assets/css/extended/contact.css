@@ -4,10 +4,19 @@
   width: 100%;
   max-width: 100%;
   min-width: 100%;
-  padding: 5px;
-  background: var(--entry);
+  padding: 6px 1ch;
+  background: none;
   color: var(--primary);
-  border-radius: 5px;
+  font: inherit;
+  border: 1px solid var(--term-pane);
+  border-radius: 0;
+}
+
+#contact-form #contact-name:focus,
+#contact-form #contact-email:focus,
+#contact-form #contact-textarea:focus {
+  border-color: var(--term-green);
+  outline: none;
 }
 
 #contact-form #contact-textarea {
@@ -19,26 +28,28 @@
   flex-flow: row-reverse;
 }
 
+/* Text-interface button: [ Send ] */
 #contact-form button {
-  width: 200px;
-  height: 40px;
-  padding: 0px 15px;
-  background: var(--tertiary-bg);
-  border-radius: var(--radius);
-  color: var(--primary);
-  border: 1px solid var(--secondary);
-  position: relative;
+  padding: 2px 1ch;
+  background: none;
+  color: var(--term-green);
+  font: inherit;
+  font-weight: 600;
+  border: none;
   cursor: pointer;
-  transition-duration: 0.2s;
-  text-align: center;
 }
 
-#contact-form button:hover {
-  background: var(--tertiary);
-  transition-duration: 0.2s;
+#contact-form button::before {
+  content: "[ ";
 }
 
-#contact-form button:active {
-  transform: translate(1px, 1px);
-  transition-duration: 0.2s;
+#contact-form button::after {
+  content: " ]";
+}
+
+#contact-form button:hover,
+#contact-form button:focus-visible {
+  background: var(--term-green);
+  color: var(--theme);
+  outline: none;
 }
